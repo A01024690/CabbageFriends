@@ -1,0 +1,122 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+      <title>LOGIN</title>
+      <meta charset="utf-8">
+      <meta content="width=device-width, initial-scale=1.0" name="viewport">
+      <meta content="" name="keywords">
+      <meta content="" name="description">
+
+      <!-- Favicons -->
+      <link href="img/favicon.png" rel="icon">
+      <link href="img/apple-touch-icon.png" rel="apple-touch-icon">
+
+      <!-- Google Fonts -->
+      <link href="https://fonts.googleapis.com/css?family=Lato:300,400,700,300italic,400italic|Raleway:400,300,700" rel="stylesheet">
+
+      <!-- Bootstrap CSS File -->
+      <link href="lib/bootstrap/css/bootstrap.min.css" rel="stylesheet">
+
+      <!-- Libraries CSS Files -->
+      <link href="lib/font-awesome/css/font-awesome.min.css" rel="stylesheet">
+    
+       <!-- your project snippet here -->
+	
+    <script src="https://cdn.firebase.com/libs/firebaseui/3.5.2/firebaseui.js"></script>
+    <link type="text/css" rel="stylesheet" href="https://cdn.firebase.com/libs/firebaseui/3.5.2/firebaseui.css" />
+    <script src="https://www.gstatic.com/firebasejs/5.8.6/firebase.js"></script>
+        <script>
+      // Initialize Firebase
+      var config = {
+        apiKey: "AIzaSyBLyNqWqr5pQ3Zap2y6Fju7I501I8YLA88",
+        authDomain: "project1-ea691.firebaseapp.com",
+        databaseURL: "https://project1-ea691.firebaseio.com",
+        projectId: "project1-ea691",
+        storageBucket: "project1-ea691.appspot.com",
+        messagingSenderId: "903951572654"
+      };
+      firebase.initializeApp(config);
+    </script>
+    
+    <!-- CSS temporary  -->
+    <style>
+        body{
+              background: url(./images/image01.jpg) no-repeat center top;
+              margin-top: -10px;
+              padding-top: 20px;
+              text-align: center;
+              background-attachment: relative;
+              background-position: center center;
+              min-height: 950px;
+              width: 100%;
+              -webkit-background-size: 100% auto;
+              -moz-background-size: 100% auto;
+              -o-background-size: 100% auto;
+              background-size: 100% auto;
+              -webkit-background-size: cover;
+              -moz-background-size: cover;
+              -o-background-size: cover;
+              background-size: cover;
+            color:white;
+        }
+	    #welcome{
+		    font: larger;
+	    }
+
+    </style>
+
+</head>
+<body>
+
+	<!-- The surrounding HTML is left untouched by FirebaseUI.
+     Your app may use that space for branding, controls and other customizations.-->
+	<h1 id="welcome">Welcome to Cabbage Friends</h1>
+    <br>
+    <br>
+	<div id="firebaseui-auth-container"></div>
+    <br>
+    <br>
+	<div id="loader">Loading...</div>
+
+	<script>
+	// Initialize the FirebaseUI Widget using Firebase.
+	var ui = new firebaseui.auth.AuthUI(firebase.auth());
+	var uiConfig = {
+	  callbacks: {
+		signInSuccessWithAuthResult: function(authResult, redirectUrl) {
+		  // User successfully signed in.
+		  // Return type determines whether we continue the redirect automatically
+		  // or whether we leave that to developer to handle.
+		  return true;
+		},
+		uiShown: function() {
+		  // The widget is rendered.
+		  // Hide the loader.
+		  document.getElementById('loader').style.display = 'none';
+		}
+	  },
+	  // Will use popup for IDP Providers sign-in flow instead of the default, redirect.
+	  signInFlow: 'popup',
+	  signInSuccessUrl: 'LandingPage.html',
+	  signInOptions: [
+		// Leave the lines as is for the providers you want to offer your users.
+		//firebase.auth.GoogleAuthProvider.PROVIDER_ID,
+		//firebase.auth.FacebookAuthProvider.PROVIDER_ID,
+		//firebase.auth.TwitterAuthProvider.PROVIDER_ID,
+		//firebase.auth.GithubAuthProvider.PROVIDER_ID,
+		firebase.auth.EmailAuthProvider.PROVIDER_ID,
+		//firebase.auth.PhoneAuthProvider.PROVIDER_ID
+	  ],
+	  // Terms of service url.
+	  tosUrl: 'LandingPage.html',
+	  // Privacy policy url.
+	  privacyPolicyUrl: 'LandingPage.html'
+	};
+	
+	// The start method will wait until the DOM is loaded.
+	ui.start('#firebaseui-auth-container', uiConfig);
+	
+	</script>
+
+</body>
+</html>

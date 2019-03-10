@@ -79,6 +79,7 @@ hr {
 .navbar {
   text-transform: uppercase;
   margin-bottom: 0px;
+    width:calc(100%-180px);  /* if screen become smaller, it has problem in menu*/
 }
 
 .navbar-inverse {

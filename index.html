@@ -73,7 +73,55 @@
             height: 240px;
             width: 360px;
         }
-
+        
+        #sideEvtNav{
+            position: fixed;
+            right:0;
+            width:180px;
+            height:100%;
+            background:#222222;
+            z-index:1000;
+            transition:all 0.2s;
+        }
+        #sideEvtNav.sen-inner{
+            position:relative;
+        }
+        #reservation{
+            height: 104px;
+            text-align: center;
+            background-color:greenyellow;
+            margin:3px;
+            border-radius: 5px;
+        }
+        #reservation a{
+            color:black;
+            font-weight: bold;
+            font-size: 15pt;
+            font-family: 'Montserrat', sans-serif;
+        }
+        .side-container {
+            overflow: hidden;
+            margin: 0px;
+            height: calc(100% - 110px);
+          }
+        .side-container ul{
+            list-style-type: none;
+            padding:5px;
+            padding-top: 0;
+        }
+        .side-container ul li{
+            border:3px white solid;
+            border-radius: 5px;
+            background: white;
+            text-align:center;
+            margin:15px;
+        }
+        
+        .side-container ul li a img{
+            width: 80%;
+            height: auto;
+            
+        }
     </style>
 </head>
 
@@ -102,6 +150,41 @@
       <!--/.nav-collapse -->
     </div>
   </div>
+    
+      <!-- Side navbar -->
+    <div id="sideEvtNav" style="top: 0px;">
+        <div class="sen-inner">
+            <div id="reservation">
+                <br>
+                <br>
+                <a id="reserve" href="reservation.html">RESERVATION</a>
+                <br>
+                <br>
+            </div>
+            <div class="side-container">
+                <ul>
+                    <li><a target="_blank" href="./index.html">
+                            <img src="./images/house-with-chimney.png" alt="Can not use the image now">
+                        </a></li>
+                    <li><a target="_blank" href="./index.html">
+                            <img src="./images/vision.png" alt="Can not use the image now">
+                        </a></li>
+                    <li><a target="_blank" href="./index.html">
+                            <img src="./images/multiple-images.png" alt="Can not use the image now">
+                        </a></li>
+                    <li><a target="_blank" href="./index.html">
+                            <img src="./images/map.png" alt="Can not use the image now">
+                        </a></li>
+                    <li><a target="_blank" href="./index.html">
+                            <img src="./images/play-button.png" alt="Can not use the image now">
+                        </a></li>
+                    
+                
+                
+                </ul>
+            </div>
+        </div>
+    </div>
 
   <!-- ========== HEADER SECTION ========== -->
   <section id="home" name="home"></section>

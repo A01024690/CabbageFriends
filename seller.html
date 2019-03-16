@@ -1,0 +1,305 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="utf-8">
+  <title>Cabbage Friends</title>
+  <meta content="width=device-width, initial-scale=1.0" name="viewport">
+  <meta content="" name="keywords">
+  <meta content="" name="description">
+
+  <!-- Favicons -->
+  <link href="img/favicon.png" rel="icon">
+  <link href="img/apple-touch-icon.png" rel="apple-touch-icon">
+
+  <!-- Google Fonts -->
+  <link href="https://fonts.googleapis.com/css?family=Montserrat:300,400,500,700" rel="stylesheet">
+
+  <!-- Bootstrap CSS File -->
+  <link href="lib/bootstrap/css/bootstrap.min.css" rel="stylesheet">
+
+  <!-- Libraries CSS Files -->
+  <link href="lib/font-awesome/css/font-awesome.min.css" rel="stylesheet">
+
+  <!-- Main Stylesheet File -->
+  <link href="css/style.css" rel="stylesheet">
+
+    <style>
+    
+    input{
+      padding: 12px 20px;
+      margin: 8px 0;
+      display: inline-block;
+      border: 5px solid #ccc;
+      border-radius: 4px;
+      box-sizing: border-box;
+    }
+
+    #div1{
+      width:80%;
+      height:60%;
+      margin-left: 50px;
+     
+    }
+    #div2{
+      width:20%;
+      height:auto;
+      margin-left: 60px;
+      margin-right: 30px;
+      margin-top: 40px;
+      
+    }
+
+    #div3{
+      width:20%;
+      height:auto;
+      margin-left: 60px;
+      margin-right: 30px;
+      margin-top: 40px;
+      
+    }
+
+    .fontstyle{
+      font-style: italic;
+      font-weight: bold;
+    }
+    #textmid{
+      position: absolute;
+      width:300px;
+      height:400px;
+      left:800px;
+      top:240px;
+    }
+
+    #textmid1{
+      position: absolute;
+      left:800px;
+      top:240px;
+      width:300px;
+      height:400px;
+    }
+
+    input[type=submit]:hover {
+      background-color: #45a049;
+    }
+
+    textarea{
+      padding: 12px 20px;
+      margin: 8px 0;
+      display: inline-block;
+      border: 5px solid #ccc;
+      border-radius: 4px;
+      box-sizing: border-box;
+    }
+
+
+        
+    </style>
+</head>
+
+<body>
+
+  <!-- Static navbar -->
+  <div class="navbar navbar-inverse navbar-static-top">
+    <div class="container">
+      <div class="navbar-header">
+        <button type="button" class="navbar-toggle" data-toggle="collapse" data-target=".navbar-collapse">
+          <span class="icon-bar"></span>
+          <span class="icon-bar"></span>
+          <span class="icon-bar"></span>
+        </button>
+        <a class="navbar-brand" href="index.html"><img id="logo" src="./images/logo.svg" width="75" height="75" alt=""></a>
+      </div>
+      <div class="navbar-collapse collapse">
+        <ul class="nav navbar-nav navbar-right">
+          <li><a href="reservation.html">Reservation</a></li>
+          <li><a href="list.html">Farm List</a></li>
+            <li><a href="myinfo.html">My info</a></li>
+          <li><a href="login.html">Login</a></li>
+
+        </ul>
+      </div>
+      <!--/.nav-collapse -->
+    </div>
+  </div>
+    
+      <!-- Side navbar -->
+    <div id="sideEvtNav" style="top: 0px;">
+        <div class="sen-inner">
+            <div id="reservation">
+                <br>
+                <br>
+                <a id="reserve" href="reservation.html">RESERVATION</a>
+                <br>
+                <br>
+            </div>
+            <div class="side-container">
+                <ul>
+                    <li><a target="_blank" href="./index.html">
+                            <img src="./images/house-with-chimney.png" alt="Can not use the image now">
+                        </a></li>
+                    <li><a target="_blank" href="./index.html">
+                            <img src="./images/vision.png" alt="Can not use the image now">
+                        </a></li>
+                    <li><a target="_blank" href="./index.html">
+                            <img src="./images/multiple-images.png" alt="Can not use the image now">
+                        </a></li>
+                    <li><a target="_blank" href="./index.html">
+                            <img src="./images/map.png" alt="Can not use the image now">
+                        </a></li>
+                    <li><a target="_blank" href="./index.html">
+                            <img src="./images/play-button.png" alt="Can not use the image now">
+                        </a></li>
+                </ul>
+            </div>
+        </div>
+    </div>
+    
+    <div>
+
+        <div id = "div1">
+          <h1>Seller Information</h1>
+          <br>
+
+          <div id ="div2">
+          <form>
+            <p class = "fontstyle">First Name:</p> <input type="text" name="firstname" placeholder="first name" pattern="[A-Za-z0-9]{2,15}" required/>
+          </form>
+          </div>
+
+          <div id ="div3">
+          <form>
+            <p class = "fontstyle">Last Name:</p> <input type="text" name="lastname" placeholder="last name" pattern="[A-Za-z0-9]{2,15}" required/>
+          </form>
+          </div>
+
+          <div id ="div3">
+          <form>
+            <p class = "fontstyle">Farm Name:</p> <input type="text" name="farmname" placeholder="farm name" pattern="[A-Za-z0-9]{2,20}" required/>
+          </form>
+          </div>
+
+          <div id ="div3">
+            <form>
+          <p class = "fontstyle">Enter your gmail:</p>
+
+          <input type="email" id="email pattern=".+@gmial.com"  placeholder = "gmail" size="50" required>
+          </form>
+          </div>
+
+
+          <div id ="div3">
+          <form>
+            <p class = "fontstyle">Farm Address:</p> <input type="email" name="address"  size="50" placeholder="address" pattern="[A-Za-z0-9]{8,15}" required/>
+          </form>
+          </div>
+
+          <div id ="div3">
+          <form>
+            <p class = "fontstyle">Personal Phone Number:</p> <input type="tel" name="telephone" size="30" placeholder="phone number" pattern="[0-9]{2,15}" required/>
+          </form>
+          </div>
+
+          <div id ="div3">
+          <form>
+            <p class = "fontstyle">Farm Phone Number:</p> <input type="tel" name="telephone" size="30" placeholder="phone number" pattern="[0-9]{2,15}" required/>
+          </form>
+          </div>
+
+          <div id ="div3">
+          <form>
+            <p class = "fontstyle">Cabbage Category:</p> <input type="text" name="type of cabbage" size="30" placeholder="cabbage type" pattern="[A-Za-z0-9]{2,15}" required/>
+          </form>
+          </div>
+          
+          <div id ="div3">
+              <p class = "fontstyle">Harvesting Period</p>
+              <form action="/action_page.php">
+              Start (month and year): <input type="month" name="harveststart">
+              <br>
+              end (month and year): <input type="month" name="harvestend">
+              </form>
+          </div>
+
+          <div id ="div3">
+          <form>
+            <p class = "fontstyle">Quantity Per Season(KG):</p> <input type="num" name="quantity" size="20" placeholder="quantity" pattern="[0-9]{2,15}" required/>
+          </form>
+          </div>
+
+
+
+          <div id = "textmid">
+            <img  alt = "p2" src = "./images/profile.png">
+            <br>
+            <form action="myform.cgi"> <input type="file" name="fileupload" value="fileupload"> <label for="fileupload"> Select a file to upload profile photo</label></form>
+            <br>
+            <br>
+            <form action="myform.cgi"> <input type="file" name="fileupload1" value="fileupload"> <label for="fileupload"> Select files to upload farm's appreance images</label></form>
+            <br>
+            <br>
+            <form action="myform.cgi"> <input type="file" name="fileupload1" value="fileupload"> <label for="fileupload"> Select files to upload farm's video</label></form>
+            <br>
+            <br>
+            <br>
+
+
+            
+
+            <form action="/action_page.php" method="get">
+              <p class = "fontstyle">Farm Introduction:</p>
+              <textarea rows="25" cols="70">
+
+              </textarea>
+              <br>
+              <br>
+              <br>
+              <br>
+              <br>
+              <br>
+            <input type="submit" value="Submit">
+            </form>
+
+
+          </div>
+
+          <div id = "textmid1">
+          <form>
+             <p class = "fontstyle">Gender:</p>
+            <input type="radio" name="gender" value="male" checked> Male<br>
+            <input type="radio" name="gender" value="female"> Female<br>
+            <input type="radio" name="gender" value="other"> Other
+          </form>
+          </div>
+
+
+        </div>
+    
+    
+    </div>
+    <br>
+    <br>
+    <br>
+    <br>
+    <br>
+  <!-- /g -->
+
+  <div id="copyrights">
+    <div class="container">
+      <p>
+        &copy; Copyrights <strong>CabbageFriends</strong>. All Rights Reserved
+      </p>
+    </div>
+  </div>
+  <!-- / copyrights -->
+
+  <!-- JavaScript Libraries -->
+  <script src="lib/jquery/jquery.min.js"></script>
+  <script src="lib/bootstrap/js/bootstrap.min.js"></script>
+  <script src="lib/php-mail-form/validate.js"></script>
+  <script src="lib/easing/easing.min.js"></script>
+
+  <!-- Template Main Javascript File -->
+  <script src="js/main.js"></script>
+
+</body>
+</html>

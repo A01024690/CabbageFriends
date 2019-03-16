@@ -1,0 +1,114 @@
+
+
+/* --------------------- background blur ---------------------- */
+#bgblur{
+  position: absolute;
+  height: 100%;
+  width: 100%;
+  filter: blur(8px);
+  
+}
+/* ----------------------------------------------------------- */
+
+#navbar {
+  text-transform: uppercase;
+  background-color: #222222;
+  padding: 0px;
+  margin: 10px;
+}
+/* -------------------------- footer --------------------------- */
+#copyrights {
+  position: absolute;
+  margin: 10px;
+  width: 50%;
+  left: 25%;
+  background: #222222;
+  text-align: center;
+  color: #fff;
+}
+/* -------------------------------------------------------------- */
+
+
+  /*
+  .navbar-inverse {
+    padding: 30px 0;
+  }
+  @media (max-width: 768px ) {
+    .navbar-inverse {
+      padding: 15px 0;
+    }
+  }
+  */
+  .navbar-inverse {
+    background-color: #222222;
+    border-color: #222222;
+  }
+  
+  .navbar-inverse .navbar-nav>li>a {
+    color: white;
+  }
+  
+  .navbar-inverse .navbar-nav>li>a:hover {
+    color: #222222;
+  }
+  
+  
+  .navbar-inverse {
+    color: white;
+  }
+  
+  .navbar-inverse .navbar-toggle {
+    border-color: transparent;
+  }
+  #rsrv{
+    background-color: #adff2f;
+    border-radius: 25px;
+  }
+  .navbar-brand{
+    padding-top: 0;
+    align-self: flex-start;
+  }
+
+
+  /*----------------------------------- my side bar/nav alternative -------------------------------*/
+  #mySidenav a {
+    position: absolute; /* Position them relative to the browser window */
+    left: -80px; /* Position them outside of the screen */
+    transition: 0.3s; /* Add transition on hover */
+    padding: 15px; /* 15px padding */
+    width: 100px; /* Set a specific width */
+    text-decoration: none; /* Remove underline */
+    font-size: 20px; /* Increase font size */
+    color: white; /* White text color */
+    border-radius: 0 5px 5px 0; /* Rounded corners on the top right and bottom right side */
+  }
+  
+  #mySidenav a:hover {
+    left: 0; /* On mouse-over, make the elements appear as they should */
+  }
+  
+  /* The about link: 20px from the top with a green background */
+  #about {
+    top: 170px;
+    background-color: #222222;
+  }
+  
+  #maps {
+    top: 230px;
+    background-color: #222222; 
+  }
+
+  #blog {
+    top: 290px;
+    background-color: #222222; 
+  }
+
+  #contact {
+    top: 350px;
+    background-color: #222222; 
+  }
+
+/*-------------------------------------------------------------------------------------------------*/
+
+/* ----- about content ----- */
+

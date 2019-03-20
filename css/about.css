@@ -11,6 +11,7 @@
 /* ----------------------------------------------------------- */
 
 #navbar {
+	position: absolute;
   text-transform: uppercase;
   background-color: #222222;
   padding: 0px;
@@ -112,3 +113,16 @@
 
 /* ----- about content ----- */
 
+#aboutContent{
+	/*background-color: lightblue;*/
+	position: absolute;
+	overflow: auto;
+	height: 75%;
+	width: 90%;
+	margin-left: 90px;
+	margin-top: 90px;
+	font-size: 70pt;
+}
+#aboutContent::-webkit-scrollbar{
+	display: hidden;
+}

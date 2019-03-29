@@ -61,9 +61,9 @@
     #butto{
       position: absolute;
       width:300px;
-      height:400px;
+      height:600px;
       left:800px;
-      top:240px;
+      top:200px;
       background-color: #00ffbf;
       font-family: 'Permanent Marker', cursive;
     }
@@ -114,6 +114,7 @@ $(document).ready(function(){
 
   <!-- Main Stylesheet File -->
   <link href="css/seller.css" rel="stylesheet">
+  <link href="css/seller2.css" rel="stylesheet">
 
   <style>
       @import url('https://fonts.googleapis.com/css?family=Raleway:300i|Permanent+Marker');
@@ -167,8 +168,29 @@ var database = firebase.database();
             <a href="myinfo.html">SELL</a>
           </li>
         </ul>
+        <ul id="countMenu">
+          <li id="count">
+            Cabbages saved: <span id="spanCount"></span>
+          </li>
+        </ul>
+        <!-- firebase count -->
+        <!-- READ -->
+        <script>
+          var output = document.getElementById("spanCount");
+          var dbRef = firebase.database().ref().child("Count");
+          dbRef.on (
+            "value",    //event to read static snapshot of db at initial call, and future chg
+            function(snap){        // event callback receives snapshot
+              output.innerText = snap.val();
+            });
+        </script>
+        <!-- WRITE -->
+        <script>
+        
+        </script>
+        <!-- firebase count end -->
         <ul class="nav navbar-nav d-flex ml-auto w-100 justify-content-end" id="loginMenu">
-          <li class="nav-link" id="loginButton">
+          <li id="loginButton">
             <a href="login.html">Login</a>
           </li>
         </ul>
@@ -218,8 +240,9 @@ var database = firebase.database();
     </form>
   </div>
 
+  <!-- <form action="myform.cgi"> <input type="file"  name="fileupload" value="fileupload"> <label for="fileupload"> Select a file to upload profile photo</label></form> -->
   <button  onclick= "storeData()"  id ="butto" class ="round" style="font-size : 50px;height:150px;width:200px">Submit</button>
-  
+
 
 
 </div>

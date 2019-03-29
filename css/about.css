@@ -75,8 +75,9 @@ body{
     border-radius: 60px;
     padding: 30px;
   }
+  
   #rsrv a:hover{
-    transition: 1s;
+    transition: 1s !important;
     border-radius: 30px;
     font-size: 25pt;
 
@@ -191,4 +192,15 @@ i {
 .down {
   transform: rotate(45deg);
   -webkit-transform: rotate(45deg);
+}
+
+/*counter*/
+#count{
+
+  float: right;
+  list-style: none;
+  position: absolute;
+  margin-top: -2%;
+  font-size: 25pt;
+  padding-right: 10%;
 }

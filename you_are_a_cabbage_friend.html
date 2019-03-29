@@ -30,7 +30,7 @@ $(document).ready(function(){
   <link href="lib/bootstrap/css/bootstrap.min.css" rel="stylesheet">
 
   <!-- Main Stylesheet File -->
-  <link href="css/about.css" rel="stylesheet">
+  <link href="css/you_are_a_cabbage_friend.css" rel="stylesheet">
 
   <style>
       @import url('https://fonts.googleapis.com/css?family=Raleway:300i|Permanent+Marker');
@@ -135,14 +135,30 @@ $(document).ready(function(){
 
 <!------------------------------ CONTENT ---------------------------------->
 <div class="col-md-10 col-md-offset-1" id="aboutContent">
-  <button id="aboutBtn">Click to learn more about us</button>
+  <!-- <button id="aboutBtn">Click to learn more about us</button> -->
   <div id="title">
-    Cabbage Friends
+    You are now a Cabbage Friend!
   </div>
-  <div id="title2">
-      Our project here is to help the over-production of Cabbages in Haenam. <br><br>
-      Every cabbage you <span id="spanBuy">BUY</span> or <span id="spanReserve">RESERVE</span> here will save a Cabbage from being wasted.
-  </div>
+  <input type="button" id="friendBtn" onclick="myFunction()" value="NEXT >">
+            <!-- button script -->
+            <script>     
+                function myFunction() { 	
+
+                    var name = document.getElementById("friendBtn").value;
+                    var dbref = firebase.database().ref("/");
+                    dbref.once("value", function(snap){
+                        var {Count} = snap.val();
+                        console.log(++Count);
+                        dbref.update({
+                        "Count" : Count
+                        });
+                        window.location.href="/Users/victorwu/Desktop/projectX\ git/ProjectX/about.html";
+                    });
+
+                }    
+            </script>
+
+
 
 </div>
 <!-------------------------- end of CONTENT ---------------------------------->    

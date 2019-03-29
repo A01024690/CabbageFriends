@@ -30,7 +30,7 @@ $(document).ready(function(){
   <link href="lib/bootstrap/css/bootstrap.min.css" rel="stylesheet">
 
   <!-- Main Stylesheet File -->
-  <link href="css/you_are_a_cabbage_friend.css" rel="stylesheet">
+  <link href="css/about.css" rel="stylesheet">
 
   <style>
       @import url('https://fonts.googleapis.com/css?family=Raleway:300i|Permanent+Marker');
@@ -135,31 +135,6 @@ $(document).ready(function(){
 
 <!------------------------------ CONTENT ---------------------------------->
 <div class="col-md-10 col-md-offset-1" id="aboutContent">
-  <!-- <button id="aboutBtn">Click to learn more about us</button> -->
-  <div id="title">
-    You are now a Cabbage Friend!
-  </div>
-  <input type="button" id="friendBtn" onclick="myFunction()" value="NEXT >">
-            <!-- button script -->
-            <script>     
-                function myFunction() { 	
-
-                    var name = document.getElementById("friendBtn").value;
-                    var dbref = firebase.database().ref("/");
-                    dbref.once("value", function(snap){
-                      var {AddedCount} = snap.val();
-                        var {Count} = snap.val();
-                        Count += AddedCount;
-                        console.log(Count);
-                        dbref.update({
-                        "Count" : Count
-                        });
-                        window.location.href="/Users/victorwu/Desktop/projectX\ git/ProjectX/about.html";
-                    });
-
-                }    
-            </script>
-
 
 
 </div>

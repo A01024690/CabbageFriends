@@ -1,0 +1,206 @@
+body{
+  color:white;
+  
+}
+
+
+/* --------------------- background blur ---------------------- */
+#bgblur{
+  position: absolute;
+  height: 100%;
+  width: 100%;
+  filter: blur(4px);
+  
+}
+/* ----------------------------------------------------------- */
+
+#navbar {
+	position: absolute;
+  text-transform: uppercase;
+  background: #222222;
+  padding: 0px;
+  margin: 10px;
+}
+/* -------------------------- footer --------------------------- */
+#copyrights {
+  position: absolute;
+  margin: 10px;
+  width: 50%;
+  left: 25%;
+  background: #222222;
+  text-align: center;
+  color: #fff;
+}
+/* -------------------------------------------------------------- */
+
+  #navbar {
+    background-color: transparent;
+    border-color: transparent;
+    font-family: 'Permanent Marker', cursive;
+    font-size: 20pt;
+  }
+  
+  #navbar #menu>li>a {
+    color: rgb(255, 255, 255);
+
+  }
+  
+  #navbar #menu>li>a:hover {
+    color: #222222;
+    transition: 0.2s;
+  }
+  
+  #loginMenu>#loginButton>a {
+    color: white;
+    padding: 25px;
+    
+  }
+  #loginMenu>#loginButton>a:hover {
+    color: #222222;
+    transition: 0.2s;
+  }
+
+	#logoMenu>#logo>a{
+		color:white;
+		padding: 25px;
+	}
+	#logoMenu>#logo>a:hover{
+		color:#222222;
+    transition: 0.2s;
+	}
+
+  
+  #rsrv{
+    background-color: #88ff00;
+    border-radius: 60px;
+    padding: 30px;
+  }
+  
+  #rsrv a:hover{
+    transition: 1s !important;
+    border-radius: 30px;
+    font-size: 25pt;
+
+  }
+
+  #buy, #sell{
+    padding-top: 30px;
+  }
+
+
+
+  /*----------------------------------- my side bar/nav alternative -------------------------------*/
+  #mySidenav a {
+    position: absolute; /* Position them relative to the browser window */
+    left: -80px; /* Position them outside of the screen */
+    transition: 0.3s; /* Add transition on hover */
+    padding: 15px; /* 15px padding */
+    width: 100px; /* Set a specific width */
+    text-decoration: none; /* Remove underline */
+    font-size: 20px; /* Increase font size */
+    color: white; /* White text color */
+    border-radius: 0 5px 5px 0; /* Rounded corners on the top right and bottom right side */
+    font-family: 'Permanent Marker', cursive;
+  }
+  
+  #mySidenav a:hover {
+    left: 0; /* On mouse-over, m  ake the elements appear as they should */
+  }
+  
+  /* The about link: 20px from the top with a green background */
+  #about {
+    top: 170px;
+    background-color: #222222;
+  }
+  /*
+  #maps {
+    top: 230px;
+    background-color: #222222; 
+  }
+  */
+  #blog {
+    top: 230px;
+    background-color: #222222; 
+  }
+
+  #contact {
+    top: 290px;
+    background-color: #222222; 
+    border:none;
+  }
+
+/*-------------------------------------------------------------------------------------------------*/
+
+/* ----- about content ----- */
+#aboutBtn{
+
+  border-radius: 10px;
+  background: transparent;
+  font-family: 'Permanent Marker', cursive;
+  padding: 5px;
+}
+#aboutBtn:focus, #aboutBtn:active, #aboutBtn:active, #aboutBtn:focus:active{
+  background-image: none !important;
+  outline: none !important;
+  -webkit-box-shadow: none !important;
+  box-shadow: none !important;
+}
+#aboutContent{
+
+	position: absolute;
+	overflow: auto;
+  height: 600px;
+  font-size: 20pt;
+  text-align: center;
+  /*text-shadow: -1px 0 #222222, 0 1px #222222, 1px 0 #222222, 0 -1px #222222;*/
+  margin-top: 200px;
+	padding-top: 50 px;
+}
+#title{
+  position: absolute;
+  margin: auto;
+  left: 0;
+  right: 0;
+  font-size: 70pt;
+  font-family: 'Permanent Marker', cursive;
+  padding-top: 100px;
+}
+#title2{
+  display:none;
+  font-family: 'Raleway', sans-serif;
+  font-size: 35pt;
+  padding-top: 100px;
+}
+span{
+  color: #88ff00;
+  font-weight: bolder;
+}
+
+
+
+/*hides scrollbar*/
+::-webkit-scrollbar {
+  width: 0px;  
+  background: transparent;
+}
+i {
+  border: solid white;
+  border-width: 0 3px 3px 0;
+  display: inline-block;
+  padding: 10px;
+}
+.down {
+  transform: rotate(45deg);
+  -webkit-transform: rotate(45deg);
+}
+
+/*counter*/
+#count{
+
+  float: right;
+  list-style: none;
+  position: absolute;
+  margin-top: -2%;
+  font-size: 25pt;
+  padding-right: 10%;
+}

@@ -147,7 +147,7 @@ body{
   box-shadow: none !important;
 }
 #aboutContent{
-
+  /*background-color: lightblue;*/
 	position: absolute;
 	overflow: auto;
   height: 600px;

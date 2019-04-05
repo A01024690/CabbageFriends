@@ -27,7 +27,7 @@ body{
   margin: 0px;
   background-color: transparent;
   border-color: transparent;
-  font-family: 'lato', sans-serif;
+  font-family: 'lato:700', sans-serif;
   font-size: 20pt;
 }
 #navbar {
@@ -37,7 +37,7 @@ body{
   margin: 0px;
   background-color: transparent;
   border-color: transparent;
-  font-family: 'Lato', sans-serif;
+  font-family: 'Lato:700', sans-serif;
   font-size: 20pt;
 }
 
@@ -53,7 +53,7 @@ body{
   }
   
   #navbar #menu>li>a:hover {
-    color: #F4A100;
+    background-color: #F4A100;
     transition: 0.2s;
   }
   
@@ -242,11 +242,12 @@ p{
   text-align: center;
 }
 #nextBtn:hover{
-  color: #F4A100;
+  background-color: #F4A100;
   transition: 0.2s;
 }
 #nextBtn{
-  font-family: 'Lato', sans-serif;
+  border-color: transparent;
+  font-family: 'Lato:700', sans-serif;
   font-size: 20pt;
   background-color: white;
   border-radius: 6px;

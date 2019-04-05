@@ -27,9 +27,8 @@ body{
   margin: 0px;
   background-color: transparent;
   border-color: transparent;
-  font-family: 'lato', sans-serif;
+  font-family: 'lato:700', sans-serif;
   font-size: 20pt;
-  font-weight: 900;
 }
 #navbar {
 	position: absolute;
@@ -38,7 +37,7 @@ body{
   margin: 0px;
   background-color: transparent;
   border-color: transparent;
-  font-family: 'Lato', sans-serif;
+  font-family: 'Lato:700', sans-serif;
   font-size: 20pt;
 }
 
@@ -54,7 +53,7 @@ body{
   }
   
   #navbar #menu>li>a:hover {
-    color: #F4A100;
+    background-color: #F4A100;
     transition: 0.2s;
   }
   
@@ -66,6 +65,7 @@ body{
   #loginMenu>#loginButton>a:hover {
     color: #F4A100;
     transition: 0.2s;
+    
   }
 
 	#logoMenu>#logo>a{

@@ -27,9 +27,9 @@ body{
   margin: 0px;
   background-color: transparent;
   border-color: transparent;
-  font-family: 'lato', sans-serif;
+  font-family: 'lato:700', sans-serif;
   font-size: 20pt;
-  font-weight: 900;
+  
 
 }
 #navbar {
@@ -71,7 +71,6 @@ body{
   }
 
 	#logoMenu>#logo>a{
-
 		color:white;
 		padding: 25px;
 	}
@@ -179,6 +178,7 @@ body{
   text-align: center;
   /*text-shadow: -1px 0 #222222, 0 1px #222222, 1px 0 #222222, 0 -1px #222222;*/
   margin-top: 130px;
+  
 }
 
 #titleCenter{

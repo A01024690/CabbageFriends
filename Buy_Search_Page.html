@@ -382,11 +382,23 @@
 //                dbref.setValue(totalQuant);
                 
                 
+                //get price from database
                 var CalcRef = firebase.database().ref("/");
+                var price;
+                var farm = "Hwawon Farm";
+                var dbRef = firebase.database().ref("farms/" + farm);
+                dbRef.on("value",
+                function(snap){
+                    stuff = snap.val();
+                    console.log(stuff);
+                    price = stuff["price"];
+                    console.log(price);
+                })
+
 
                 CalcRef.update ({
                     AddedCount: totalQuant,
-                    TotalPrice: Number(document.getElementById('buy_num_in_farm1').value)*700+ Number(document.getElementById('buy_num_in_farm2').value)*800 + Number(document.getElementById('buy_num_in_farm3').value)*860
+                    TotalPrice: Number(document.getElementById('buy_num_in_farm1').value) * price+ Number(document.getElementById('buy_num_in_farm2').value)*800 + Number(document.getElementById('buy_num_in_farm3').value)*860
                 });
                 
 //                famePrice1Ref.on("value", snap => var price1 = snap.val() );

@@ -30,7 +30,7 @@ body{
   font-family: 'lato', sans-serif;
   font-size: 20pt;
   font-weight: 900;
-  z-index: 999;
+
 }
 #navbar {
 	position: absolute;
@@ -45,7 +45,7 @@ body{
 
 
   
-  #navbar #menu>li>a {
+  #navbar2 #menu>li>a {
     background-color: white;
     border-radius: 6px;
     color: rgb(0, 0, 0);
@@ -55,16 +55,15 @@ body{
   }
 
   
-  #navbar #menu>li>a:hover {
-    color: #F4A100;
+  #navbar2 #menu>li>a:hover {
+    color: black;
     transition: 0.2s;
-    background-color: black;
+    background-color: #F4A100;
   }
   
   #loginMenu>#loginButton>a {
     color: white;
     padding: 25px;
-    
   }
   #loginMenu>#loginButton>a:hover {
     color: #F4A100;
@@ -72,7 +71,7 @@ body{
   }
 
 	#logoMenu>#logo>a{
-    
+
 		color:white;
 		padding: 25px;
 	}
@@ -80,7 +79,9 @@ body{
 		color:#F4A100;
     transition: 0.2s;
 	}
-
+  #logoMenu{
+    padding-right: 0px !important;
+  }
   /*
   #rsrv{
     background-color: #;
@@ -96,7 +97,7 @@ body{
         background-color: #F4A100;
   }*/
     #menu{
-      z-index: 1;
+    z-index: 1;
     margin-top: 35px;
   }
   

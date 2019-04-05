@@ -1,0 +1,152 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="utf-8">
+  <title>Cabbage Friends</title>
+<!-- JQuery -->
+<style src="js/about.js"></style>
+<script src="https://ajax.googleapis.com/ajax/libs/jquery/3.3.1/jquery.min.js"></script>
+<!--
+<script>
+$(document).ready(function(){
+  $("#aboutBtn").click(function(){
+    $("#title").fadeToggle(function(){
+      $("#title2").fadeToggle();
+    });
+  });
+});
+
+</script>
+-->	
+	<!-- Bootstrap CSS -->
+	<link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/bootstrap/4.3.1/css/bootstrap.min.css" integrity="sha384-ggOyR0iXCbMQv3Xipma34MD+dH/1fQ784/j6cY/iJTQUOhcWr7x9JvoRxT2MZw1T" crossorigin="anonymous">
+	
+  <meta content="width=device-width, initial-scale=1.0" name="viewport">
+  <meta content="" name="keywords">
+  <meta content="" name="description">
+
+  <!-- Bootstrap CSS File -->
+  <link href="lib/bootstrap/css/bootstrap.min.css" rel="stylesheet">
+
+  <!-- Main Stylesheet File -->
+  <link href="css/newTemplate.css" rel="stylesheet">
+
+  <style>
+      @import url('https://fonts.googleapis.com/css?family=Raleway:900|Lato:300');
+  </style>
+  
+
+
+  <script src="https://www.gstatic.com/firebasejs/5.9.2/firebase.js"></script>
+  <script>
+    // Initialize Firebase
+    var config = {
+      apiKey: "AIzaSyCiAhAXTdVzymNXtsvvZGCuMSVj_lZWR-E",
+      authDomain: "projectx-cabbagefriends.firebaseapp.com",
+      databaseURL: "https://projectx-cabbagefriends.firebaseio.com",
+      projectId: "projectx-cabbagefriends",
+      storageBucket: "projectx-cabbagefriends.appspot.com",
+      messagingSenderId: "219900775267"
+    };
+    firebase.initializeApp(config);
+  </script>
+
+</head>
+
+<body>
+<img src="./images/bg.jpg" id="bgblur" alt="bgImage">
+<!-- cabbages saved 
+  <div class="col-md-8 col-md-offset-2" id="count">
+    <span id="spanCount"></span><p>CABBAGES SAVED!</p>
+  </div>
+-->
+
+<nav class="navbar fixed-top navbar-expand-sm navbar-inverse justify-content-center" id="navbar">
+    <ul class="nav navbar-nav d-flex w-100 justify-content-center" id="menu">
+        <li class="nav-link" id="buy">
+          <a href="list.html">BUY</a>
+        </li>
+        <li class="nav-link" id="rsrv">
+            <a href="reservation.html">RESERVE</a>
+        </li>
+        <li class="nav-link" id="sell">
+          <a href="myinfo.html">SELL</a>
+        </li>
+      </ul>
+</nav>
+
+  <!-- logo -->
+<div class="container" id="menuContainer">
+  <nav class="navbar fixed-top navbar-expand-sm navbar-inverse justify-content-center" id="navbar2">
+    <ul class="nav navbar-nav d-flex mr-auto w-10 justify-content-start" id="logoMenu">
+      <li class="nav-link" id="logo">
+        <a href="login.html" id="logo2"><img width="75" height="75" src="./images/logo2.svg">Home</a>
+      </li>
+    </ul>
+        <!-- top nav bar -->
+        
+        <!-- firebase count -->
+        <!-- READ -->
+        <!-- we dont need this function in template
+        <script>
+          var output = document.getElementById("spanCount");
+          var dbRef = firebase.database().ref().child("Count");
+          dbRef.on (
+            "value",    //event to read static snapshot of db at initial call, and future chg
+            function(snap){        // event callback receives snapshot
+              output.innerText = snap.val();
+            });
+        </script>
+      -->
+        <!-- WRITE -->
+        <script>
+        
+        </script>
+        <!-- firebase count end -->
+        <ul class="nav navbar-nav d-flex ml-auto w-10 justify-content-end" id="loginMenu">
+          <li id="loginButton">
+            <a href="login.html">Login</a>
+          </li>
+        </ul>
+  </nav>      
+</div>
+  
+<!-- Victor's Side Nav 
+<div id="mySidenav" class="sidenav" >
+    <a href="#" id="about">placeholder</a>
+    <a href="#" id="maps">Maps</a>
+    <a href="#" id="blog">placeholder</a>
+    <a href="#" id="contact">placeholder</a>
+</div>
+-->
+
+<!------------------------------ CONTENT ---------------------------------->
+
+  <div id="titleCenter">
+    <div id="title">
+    </div>
+  </div>
+  <div class="col-md-8 col-md-offset-2" id="aboutContent">
+  </div>
+  <div class="col-md-6 col-md-offset-3" id="title2">
+
+</div>
+
+  
+<!--<button class="col-md-4 col-md-offset-4" id="aboutBtn">Click to Learn More About Us</button>-->
+<!-------------------------- end of CONTENT ---------------------------------->    
+
+    
+
+  <!-- JavaScript Libraries -->
+  <script src="lib/jquery/jquery.min.js"></script>
+  <script src="lib/bootstrap/js/bootstrap.min.js"></script>
+  <script src="lib/php-mail-form/validate.js"></script>
+
+
+	<!-- Bootstrap CDN -->
+	<!--<script src="https://code.jquery.com/jquery-3.3.1.slim.min.js" integrity="sha384-q8i/X+965DzO0rT7abK41JStQIAqVgRVzpbzo5smXKp4YfRvH+8abtTE1Pi6jizo" crossorigin="anonymous"></script>-->
+	<script src="https://cdnjs.cloudflare.com/ajax/libs/popper.js/1.14.7/umd/popper.min.js" integrity="sha384-UO2eT0CpHqdSJQ6hJty5KVphtPhzWj9WO1clHTMGa3JDZwrnQq4sF86dIHNDz0W1" crossorigin="anonymous"></script>
+	<script src="https://stackpath.bootstrapcdn.com/bootstrap/4.3.1/js/bootstrap.min.js" integrity="sha384-JjSmVgyd0p3pXB1rRibZUAYoIIy6OrQ6VrjIEaFf/nJGzIxFDsf4x0xIM+B07jRM" crossorigin="anonymous"></script>
+</body>
+</html>

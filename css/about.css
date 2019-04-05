@@ -29,6 +29,7 @@ body{
   border-color: transparent;
   font-family: 'lato', sans-serif;
   font-size: 20pt;
+  font-weight: 900;
 }
 #navbar {
 	position: absolute;

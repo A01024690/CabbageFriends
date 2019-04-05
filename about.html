@@ -6,7 +6,7 @@
 <!-- JQuery -->
 <style src="js/about.js"></style>
 <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.3.1/jquery.min.js"></script>
-
+<!--
 <script>
 $(document).ready(function(){
   $("#aboutBtn").click(function(){
@@ -14,11 +14,10 @@ $(document).ready(function(){
       $("#title2").fadeToggle();
     });
   });
-
-  
 });
+
 </script>
-	
+-->	
 	<!-- Bootstrap CSS -->
 	<link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/bootstrap/4.3.1/css/bootstrap.min.css" integrity="sha384-ggOyR0iXCbMQv3Xipma34MD+dH/1fQ784/j6cY/iJTQUOhcWr7x9JvoRxT2MZw1T" crossorigin="anonymous">
 	
@@ -33,7 +32,7 @@ $(document).ready(function(){
   <link href="css/about.css" rel="stylesheet">
 
   <style>
-      @import url('https://fonts.googleapis.com/css?family=Raleway:300i|Permanent+Marker');
+      @import url('https://fonts.googleapis.com/css?family=Raleway:900|Lato:300');
   </style>
   
 
@@ -57,36 +56,35 @@ $(document).ready(function(){
 <body>
 <img src="./images/bg.jpg" id="bgblur" alt="bgImage">
 
+  <div class="col-md-8 col-md-offset-2" id="count">
+    <span id="spanCount"></span><p>CABBAGES SAVED!</p>
+  </div>
 
+
+<nav class="navbar fixed-bottom navbar-expand-sm navbar-inverse justify-content-center" id="navbar">
+    <ul class="nav navbar-nav d-flex w-100 justify-content-center" id="menu">
+        <li class="nav-link" id="buy">
+          <a href="list.html">BUY</a>
+        </li>
+        <li class="nav-link" id="rsrv">
+            <a href="reservation.html">RESERVE</a>
+        </li>
+        <li class="nav-link" id="sell">
+          <a href="myinfo.html">SELL</a>
+        </li>
+      </ul>
+</nav>
 
   <!-- logo -->
 <div class="container" id="menuContainer">
-  <nav class="navbar fixed-top navbar-expand-sm navbar-inverse justify-content-center" id="navbar">
+  <nav class="navbar fixed-top navbar-expand-sm navbar-inverse justify-content-center" id="navbar2">
     <ul class="nav navbar-nav d-flex mr-auto w-100 justify-content-start" id="logoMenu">
       <li class="nav-link" id="logo">
         <a href="login.html" id="logo2"><img width="75" height="75" src="./images/logo2.svg">Home</a>
       </li>
     </ul>
-    
-
         <!-- top nav bar -->
         
-        <ul class="nav navbar-nav d-flex w-100 justify-content-center" id="menu">
-          <li class="nav-link" id="buy">
-            <a href="list.html">BUY</a>
-          </li>
-          <li class="nav-link" id="rsrv">
-              <a href="reservation.html">RESERVE</a>
-            </li>
-          <li class="nav-link" id="sell">
-            <a href="myinfo.html">SELL</a>
-          </li>
-        </ul>
-        <ul id="countMenu">
-          <li id="count">
-            Cabbages saved: <span id="spanCount"></span>
-          </li>
-        </ul>
         <!-- firebase count -->
         <!-- READ -->
         <script>
@@ -110,41 +108,32 @@ $(document).ready(function(){
         </ul>
   </nav>      
 </div>
-      <!--
-      </div>
-      -->
   
-<!-- Victor's Side Nav -->
+<!-- Victor's Side Nav 
 <div id="mySidenav" class="sidenav" >
     <a href="#" id="about">placeholder</a>
-    <!--<a href="#" id="maps">Maps</a>-->
+    <a href="#" id="maps">Maps</a>
     <a href="#" id="blog">placeholder</a>
     <a href="#" id="contact">placeholder</a>
 </div>
-
-<!-- Copyrights 
-<div class="container">
-  <nav class="navbar fixed-bottom navbar-expand-sm navbar-inverse justify-content-center" id="copyrights">
-  
-    &copy; Copyright &nbsp <strong>CabbageFriends</strong>. All Rights Reserved
-  
-  </nav>
-</div>
 -->
-<!-- / copyrights -->
 
 <!------------------------------ CONTENT ---------------------------------->
-<div class="col-md-10 col-md-offset-1" id="aboutContent">
-  <button id="aboutBtn">Click to learn more about us</button>
-  <div id="title">
-    Cabbage Friends
-  </div>
-  <div id="title2">
-      Our project here is to help the over-production of Cabbages in Haenam. <br><br>
-      Every cabbage you <span id="spanBuy">BUY</span> or <span id="spanReserve">RESERVE</span> here will save a Cabbage from being wasted.
-  </div>
 
+  <div id="titleCenter">
+    <div id="title">
+        CABBAGE FRIENDS
+    </div>
+  </div>
+  <div class="col-md-8 col-md-offset-2" id="aboutContent">
+  </div>
+  <div class="col-md-6 col-md-offset-3" id="title2">
+    Our project here is to help the over-production of Cabbages in Haenam. <br><br>
+    Every cabbage you <span id="spanBuy">BUY</span> or <span id="spanReserve">RESERVE</span> here will save a Cabbage from being wasted.
 </div>
+
+  
+<!--<button class="col-md-4 col-md-offset-4" id="aboutBtn">Click to Learn More About Us</button>-->
 <!-------------------------- end of CONTENT ---------------------------------->    
 
     

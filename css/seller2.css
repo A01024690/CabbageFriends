@@ -15,7 +15,7 @@ body{
 /* ----------------------------------------------------------- */
 
 #navbar {
-	position: absolute;
+  position: absolute;
   text-transform: uppercase;
   background: #222222;
   padding: 0px;
@@ -60,14 +60,14 @@ body{
     transition: 0.2s;
   }
 
-	#logoMenu>#logo>a{
-		color:white;
-		padding: 25px;
-	}
-	#logoMenu>#logo>a:hover{
-		color:#222222;
+  #logoMenu>#logo>a{
+    color:white;
+    padding: 25px;
+  }
+  #logoMenu>#logo>a:hover{
+    color:#222222;
     transition: 0.2s;
-	}
+  }
 
   
   #sell{
@@ -75,10 +75,12 @@ body{
     border-radius: 60px;
     padding: 30px;
   }
+  
   #sell a:hover{
-    transition: 1s;
+    transition: 1s !important;
     border-radius: 30px;
     font-size: 25pt;
+    
 
   }
 
@@ -146,14 +148,14 @@ body{
 }
 #aboutContent{
 
-	position: absolute;
-	overflow: auto;
+  position: absolute;
+  overflow: auto;
   height: 600px;
   font-size: 20pt;
   text-align: center;
   /*text-shadow: -1px 0 #222222, 0 1px #222222, 1px 0 #222222, 0 -1px #222222;*/
   margin-top: 200px;
-	padding-top: 50 px;
+  padding-top: 50 px;
 }
 #title{
   position: absolute;
@@ -164,17 +166,35 @@ body{
   font-family: 'Permanent Marker', cursive;
   padding-top: 100px;
 }
-#title2{
-  display:none;
-  font-family: 'Raleway', sans-serif;
-  font-size: 35pt;
-  padding-top: 100px;
-}
+
 span{
   color: #88ff00;
   font-weight: bolder;
 }
 
+#friendBtn{
+    background-color: #88ff00 !important;
+    margin-top: 450px !important;
+    padding: 30px !important;
+    border-radius: 60px !important;
+    text-decoration: none !important;
+    font-family: 'Permanent Marker', cursive !important;
+    color: white !important;
+}
+
+#friendBtn:hover {
+    color: #222222 !important;
+    transition: 1s !important;
+    border-radius: 100px !important;
+    font-size: 25pt !important;
+  }
+
+#friendBtn:focus, #friendBtn:active, #friendBtn:active, #friendBtn:focus:active{
+  background-image: none !important;
+  outline: none !important;
+  -webkit-box-shadow: none !important;
+  box-shadow: none !important;
+  }
 
 
 /*hides scrollbar*/
@@ -191,4 +211,15 @@ i {
 .down {
   transform: rotate(45deg);
   -webkit-transform: rotate(45deg);
+}
+
+/*counter*/
+#count{
+
+  float: right;
+  list-style: none;
+  position: absolute;
+  margin-top: -2%;
+  font-size: 25pt;
+  padding-right: 10%;
 }

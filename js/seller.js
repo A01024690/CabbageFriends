@@ -38,6 +38,16 @@ function storeData(){
 	} else {
 		alert("please input all the blank!")
 	}
+
+	var promise = firebase.database().ref("farms/" + farmName).update({
+				farmName: farmName,
+				location: location,
+				price: price
+			});
+
+	promise.then(function() {
+			   window.location.href="you_are_a_cabbage_friend.html";    
+			});	
 }
 
 // function storeData(){

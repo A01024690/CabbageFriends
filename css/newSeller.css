@@ -1,0 +1,358 @@
+/* rehaul */
+
+
+
+
+
+/* ------------------------------------- */
+body{
+  color:white;
+  
+}
+
+
+/* --------------------- background blur ---------------------- */
+#bgblur{
+  position: absolute;
+  width: 100%;
+  height: 100%;
+}
+/* ----------------------------------------------------------- */
+
+#navbar2 {
+	position: absolute;
+  text-transform: uppercase;
+  background: #222222;
+  padding: 0px;
+  margin: 0px;
+  background-color: transparent;
+  border-color: transparent;
+  font-family: 'lato', sans-serif;
+  font-size: 20pt;
+  font-weight: 900;
+
+}
+#navbar {
+	position: absolute;
+  background: #222222;
+  padding: 0px;
+  margin: 0px;
+  background-color: transparent;
+  border-color: transparent;
+  font-family: 'Lato', sans-serif;
+  font-size: 20pt;
+}
+
+
+  
+  #navbar2 #menu>li>a {
+    background-color: white;
+    border-radius: 6px;
+    color: rgb(0, 0, 0);
+    padding: 20px;
+    padding-left: 40px;
+    padding-right: 40px;
+  }
+
+  
+  #navbar2 #menu>li>a:hover {
+    /*color: black;*/
+    transition: 0.2s;
+    background-color: #F4A100;
+  }
+  
+  #loginMenu>#loginButton>a {
+    color: white;
+    padding: 25px;
+  }
+  #loginMenu>#loginButton>a:hover {
+    color: #F4A100;
+    transition: 0.2s;
+  }
+
+	#logoMenu>#logo>a{
+
+		color:white;
+		padding: 25px;
+	}
+	#logoMenu>#logo>a:hover{
+		color:#F4A100;
+    transition: 0.2s;
+	}
+  #logoMenu{
+    padding-right: 0px !important;
+  }
+  /*
+  #rsrv{
+    background-color: #;
+    border-radius: 20px;
+  }
+    #rsrv a:hover{
+    transition: 1s !important;
+    border-radius: 30px;
+    font-size: 25pt;
+  }
+  */
+  /*#menu li a:hover{
+        background-color: #F4A100;
+  }*/
+    #menu{
+    z-index: 1;
+    margin-top: 35px;
+  }
+  
+  #buy{
+    margin-right: 100px;
+  }
+  #sell{
+    margin-left: 100px;
+  }
+
+
+
+  /*----------------------------------- my side bar/nav alternative -------------------------------*/
+  #mySidenav a {
+    position: absolute; /* Position them relative to the browser window */
+    left: -80px; /* Position them outside of the screen */
+    transition: 0.3s; /* Add transition on hover */
+    padding: 15px; /* 15px padding */
+    width: 100px; /* Set a specific width */
+    text-decoration: none; /* Remove underline */
+    font-size: 20px; /* Increase font size */
+    color: white; /* White text color */
+    border-radius: 0 5px 5px 0; /* Rounded corners on the top right and bottom right side */
+    font-family: 'Raleway', sans-serif;
+  }
+  
+  #mySidenav a:hover {
+    left: 0; /* On mouse-over, m  ake the elements appear as they should */
+  }
+  
+  /* The about link: 20px from the top with a green background */
+  #about {
+    top: 170px;
+    background-color: #F4A100;
+  }
+  /*
+  #maps {
+    top: 230px;
+    background-color: #222222; 
+  }
+  */
+  #blog {
+    top: 230px;
+    background-color: #F4A100; 
+  }
+
+  #contact {
+    top: 290px;
+    background-color: #F4A100; 
+    border:none;
+  }
+
+/*-------------------------------------------------------------------------------------------------*/
+
+/* ----- about content ----- */
+
+#aboutBtn{
+  z-index: 1;
+  border-radius: 10px;
+  background: transparent;
+  font-family: 'Raleway', sans-serif;
+  padding: 5px;
+  margin-top: 700px;
+  position: absolute;
+}
+#aboutBtn:focus, #aboutBtn:active, #aboutBtn:active, #aboutBtn:focus:active{
+  background-image: none !important;
+  outline: none !important;
+  -webkit-box-shadow: none !important;
+  box-shadow: none !important;
+}
+#aboutContent{
+  background-color: black;
+  opacity: 0.5;
+	position: absolute;
+	overflow: auto;
+  height: 650px;
+  font-size: 20pt;
+  text-align: center;
+  /*text-shadow: -1px 0 #222222, 0 1px #222222, 1px 0 #222222, 0 -1px #222222;*/
+  margin-top: 130px;
+}
+
+#titleCenter{
+  display: flex;
+  justify-content: center;
+}
+#title{
+  top: 20px;
+  position: absolute;
+  z-index: 1;
+  margin: auto 0;
+  font-size: 50pt;
+  font-family: 'Raleway', sans-serif;
+  letter-spacing: -3px;
+}
+#title2{
+  text-align: center;
+  z-index: 1 !important;
+  top: 350px;
+  position: absolute;
+  font-family: 'lato', sans-serif;
+  font-size: 25pt;
+  padding-top: 100px;
+  
+}
+#spanBuy, #spanReserve{
+  z-index: 1;
+  font-size: 25pt;
+  color: #f4a100;
+}
+#spanCount{
+  font-size: 100pt;
+  color: #f4a100;
+  font-weight: bolder;
+  display: flex;
+  justify-content: center;
+}
+
+/*hides scrollbar*/
+::-webkit-scrollbar {
+  width: 0px;  
+  background: transparent;
+}
+i {
+  border: solid white;
+  border-width: 0 3px 3px 0;
+  display: inline-block;
+  padding: 10px;
+}
+.down {
+  transform: rotate(45deg);
+  -webkit-transform: rotate(45deg);
+}
+
+
+
+#count{
+  line-height: 1;
+  z-index: 1;
+  top: 20%;
+  letter-spacing: -5px;
+  position: absolute;
+}
+#count p{
+  font-size: 75pt;
+  font-family: 'Raleway', sans-serif;
+}
+p{
+  text-align: center;
+}
+
+/*for form part css*/
+input{
+      padding: 12px 20px;
+      margin: 8px 0;
+      display: inline-block;
+      border: 5px solid #ccc;
+      border-radius: 4px;
+      box-sizing: border-box;
+    }
+
+    #div1{
+      width:80%;
+      height:60%;
+      margin-left: 50px;
+     
+    }
+    #div2{
+      width:20%;
+      height:auto;
+      margin-left: -20px;
+      margin-right: 30px;
+      margin-top: 40px;
+      
+    }
+
+    #div3{
+      width:20%;
+      height:auto;
+      margin-left: -20px;
+      margin-right: 30px;
+      margin-top: 40px;
+      
+    }
+
+    .fontstyle{
+      font-family: 'Permanent Marker', cursive;
+      font-weight: bold;
+    }
+    #textmid{
+      position: absolute;
+      width:500px;
+      height:400px;
+      left:550px;
+      top:40px;
+      /*background-color: grey;*/
+    }
+    #imggg{
+      height:250px;
+      width:250px;
+    }
+
+    #textmid1{
+      position: absolute;
+      left:850px;
+      top:240px;
+      width:500px;
+      height:400px;
+    }
+    #butto{
+      position: absolute;
+      width:300px;
+      height:400px;
+      left:350px;
+      top:550px;
+      background-color: #f4a100;
+      font-family: 'Permanent Marker', cursive;
+    }
+
+    input[type=submit]:hover {
+      background-color: #45a049;
+    }
+
+    textarea{
+      padding: 12px 20px;
+      margin: 8px 0;
+      display: inline-block;
+      border: 5px solid #ccc;
+      border-radius: 4px;
+      box-sizing: border-box;
+    }
+    .round{
+      border-radius: 10px;
+    }
+    #yello{
+      
+      /*opacity: 0.3;*/
+      position: absolute;
+      overflow: auto;
+      height: 700px;
+      width:2000px;
+      /*background-color: #F8F8FF;*/
+      font-size: 18pt;
+      text-align: center;
+      /*text-shadow: -1px 0 #222222, 0 1px #222222, 1px 0 #222222, 0 -1px #222222;*/
+      margin-top: 130px;
+}
+  #file{
+    display: inline-block;
+  }
+
+  #upfile{
+    size:20px;
+    width:410px;
+    background-color:#24562D;
+    font-color:black;
+  }

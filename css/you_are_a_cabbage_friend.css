@@ -184,7 +184,6 @@ body{
   margin: auto 0;
   font-size: 50pt;
   font-family: 'Raleway', sans-serif;
-  letter-spacing: -3px;
 }
 #title2{
   text-align: center;
@@ -231,7 +230,6 @@ i {
   line-height: 1;
   z-index: 1;
   top: 20%;
-  letter-spacing: -5px;
   position: absolute;
 }
 #count p{

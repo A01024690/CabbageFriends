@@ -186,7 +186,6 @@ body{
   margin: auto 0;
   font-size: 50pt;
   font-family: 'Raleway', sans-serif;
-  letter-spacing: -3px;
 }
 #title2{
   text-align: center;
@@ -198,10 +197,11 @@ body{
   padding-top: 100px;
   
 }
-#spanBuy, #spanReserve{
+#title2 #spanBuy, #title2 #spanReserve{
   z-index: 1;
   font-size: 25pt;
   color: #f4a100;
+  font-family: 'lato:700', sans-serif;
 }
 #spanCount{
   font-size: 100pt;
@@ -233,7 +233,6 @@ i {
   line-height: 1;
   z-index: 1;
   top: 20%;
-  letter-spacing: -5px;
   position: absolute;
 }
 #count p{

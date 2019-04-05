@@ -1,3 +1,10 @@
+/* rehaul */
+
+
+
+
+
+/* ------------------------------------- */
 body{
   color:white;
   
@@ -7,46 +14,46 @@ body{
 /* --------------------- background blur ---------------------- */
 #bgblur{
   position: absolute;
-  height: 100%;
   width: 100%;
-  filter: blur(4px);
-  
+  height: 100%;
 }
 /* ----------------------------------------------------------- */
 
-#navbar {
+#navbar2 {
 	position: absolute;
   text-transform: uppercase;
   background: #222222;
   padding: 0px;
-  margin: 10px;
+  margin: 0px;
+  background-color: transparent;
+  border-color: transparent;
+  font-family: 'lato', sans-serif;
+  font-size: 20pt;
 }
-/* -------------------------- footer --------------------------- */
-#copyrights {
-  position: absolute;
-  margin: 10px;
-  width: 50%;
-  left: 25%;
+#navbar {
+	position: absolute;
   background: #222222;
-  text-align: center;
-  color: #fff;
+  padding: 0px;
+  margin: 0px;
+  background-color: transparent;
+  border-color: transparent;
+  font-family: 'Lato', sans-serif;
+  font-size: 20pt;
 }
-/* -------------------------------------------------------------- */
 
-  #navbar {
-    background-color: transparent;
-    border-color: transparent;
-    font-family: 'Permanent Marker', cursive;
-    font-size: 20pt;
-  }
+
   
   #navbar #menu>li>a {
-    color: rgb(255, 255, 255);
-
+    background-color: white;
+    border-radius: 6px;
+    color: rgb(0, 0, 0);
+    padding: 20px;
+    padding-left: 40px;
+    padding-right: 40px;
   }
   
   #navbar #menu>li>a:hover {
-    color: #222222;
+    color: #F4A100;
     transition: 0.2s;
   }
   
@@ -56,7 +63,7 @@ body{
     
   }
   #loginMenu>#loginButton>a:hover {
-    color: #222222;
+    color: #F4A100;
     transition: 0.2s;
   }
 
@@ -65,27 +72,32 @@ body{
 		padding: 25px;
 	}
 	#logoMenu>#logo>a:hover{
-		color:#222222;
+		color:#F4A100;
     transition: 0.2s;
 	}
 
-  
+  /*
   #rsrv{
-    background-color: #88ff00;
-    border-radius: 60px;
-    padding: 30px;
+    background-color: #;
+    border-radius: 20px;
   }
-  
-  #rsrv a:hover{
+    #rsrv a:hover{
     transition: 1s !important;
     border-radius: 30px;
     font-size: 25pt;
-    
-
   }
+  */
+  
+  #menu{
 
-  #buy, #sell{
-    padding-top: 30px;
+    margin-bottom: 35px;
+  }
+  
+  #buy{
+    margin-right: 100px;
+  }
+  #sell{
+    margin-left: 100px;
   }
 
 
@@ -101,7 +113,7 @@ body{
     font-size: 20px; /* Increase font size */
     color: white; /* White text color */
     border-radius: 0 5px 5px 0; /* Rounded corners on the top right and bottom right side */
-    font-family: 'Permanent Marker', cursive;
+    font-family: 'Raleway', sans-serif;
   }
   
   #mySidenav a:hover {
@@ -111,7 +123,7 @@ body{
   /* The about link: 20px from the top with a green background */
   #about {
     top: 170px;
-    background-color: #222222;
+    background-color: #F4A100;
   }
   /*
   #maps {
@@ -121,24 +133,27 @@ body{
   */
   #blog {
     top: 230px;
-    background-color: #222222; 
+    background-color: #F4A100; 
   }
 
   #contact {
     top: 290px;
-    background-color: #222222; 
+    background-color: #F4A100; 
     border:none;
   }
 
 /*-------------------------------------------------------------------------------------------------*/
 
 /* ----- about content ----- */
-#aboutBtn{
 
+#aboutBtn{
+  z-index: 1;
   border-radius: 10px;
   background: transparent;
-  font-family: 'Permanent Marker', cursive;
+  font-family: 'Raleway', sans-serif;
   padding: 5px;
+  margin-top: 700px;
+  position: absolute;
 }
 #aboutBtn:focus, #aboutBtn:active, #aboutBtn:active, #aboutBtn:focus:active{
   background-image: none !important;
@@ -147,55 +162,52 @@ body{
   box-shadow: none !important;
 }
 #aboutContent{
-  /*background-color: lightblue;*/
+  background-color: black;
+  opacity: 0.5;
 	position: absolute;
 	overflow: auto;
-  height: 600px;
+  height: 650px;
   font-size: 20pt;
   text-align: center;
   /*text-shadow: -1px 0 #222222, 0 1px #222222, 1px 0 #222222, 0 -1px #222222;*/
-  margin-top: 200px;
-	padding-top: 50 px;
+  margin-top: 130px;
+}
+
+#titleCenter{
+  display: flex;
+  justify-content: center;
 }
 #title{
+  top: 20px;
   position: absolute;
-  margin: auto;
-  left: 0;
-  right: 0;
-  font-size: 70pt;
-  font-family: 'Permanent Marker', cursive;
+  z-index: 1;
+  margin: auto 0;
+  font-size: 50pt;
+  font-family: 'Raleway', sans-serif;
+  letter-spacing: -3px;
+}
+#title2{
+  text-align: center;
+  z-index: 1 !important;
+  top: 350px;
+  position: absolute;
+  font-family: 'lato', sans-serif;
+  font-size: 25pt;
   padding-top: 100px;
+  
 }
-
-span{
-  color: #88ff00;
+#spanBuy, #spanReserve{
+  z-index: 1;
+  font-size: 25pt;
+  color: #f4a100;
+}
+#spanCount{
+  font-size: 100pt;
+  color: #f4a100;
   font-weight: bolder;
+  display: flex;
+  justify-content: center;
 }
-
-#friendBtn{
-    background-color: #88ff00 !important;
-    margin-top: 450px !important;
-    padding: 30px !important;
-    border-radius: 60px !important;
-    text-decoration: none !important;
-    font-family: 'Permanent Marker', cursive !important;
-    color: white !important;
-}
-
-#friendBtn:hover {
-    color: #222222 !important;
-    transition: 1s !important;
-    border-radius: 100px !important;
-    font-size: 25pt !important;
-  }
-
-#friendBtn:focus, #friendBtn:active, #friendBtn:active, #friendBtn:focus:active{
-  background-image: none !important;
-  outline: none !important;
-  -webkit-box-shadow: none !important;
-  box-shadow: none !important;
-  }
-
 
 /*hides scrollbar*/
 ::-webkit-scrollbar {
@@ -213,13 +225,45 @@ i {
   -webkit-transform: rotate(45deg);
 }
 
-/*counter*/
-#count{
 
-  float: right;
-  list-style: none;
+
+#count{
+  line-height: 1;
+  z-index: 1;
+  top: 20%;
+  letter-spacing: -5px;
   position: absolute;
-  margin-top: -2%;
-  font-size: 25pt;
-  padding-right: 10%;
+}
+#count p{
+  font-size: 75pt;
+  font-family: 'Raleway', sans-serif;
+}
+p{
+  text-align: center;
+}
+#nextBtn:hover{
+  color: #F4A100;
+  transition: 0.2s;
+}
+#nextBtn{
+  font-family: 'Lato', sans-serif;
+  font-size: 20pt;
+  background-color: white;
+  border-radius: 6px;
+  color: rgb(0, 0, 0);
+  padding: 20px;
+  padding-left: 40px;
+  padding-right: 40px;
+
+}
+#nextBtn:focus, #nextBtn:active, #nextBtn:active, #nextBtn:focus:active{
+  background-image: none !important;
+  outline: none !important;
+  -webkit-box-shadow: none !important;
+  box-shadow: none !important;
+}
+#next{
+  text-align: center;
+  margin-top: 550px;
+  z-index: 1;
 }

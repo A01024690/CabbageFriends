@@ -313,7 +313,7 @@
                 <p>Total Price : </p><p><span id="totalPrice"></span></p> 
             </div>
             <form>
-                <button type="submit" class="buy_button"><b>CONFIRM</b>
+                <button type="submit" class="buy_button" onclick="myConfirm(); return false;"><b>CONFIRM</b>
                 </button>
                 <div>
                 <a target="_blank" href="you_are_a_cabbage_friend.html"><div><b>BUY</b></div></a>
@@ -321,71 +321,81 @@
             </form>
         </div>
         
+
+        
+        <!--------------item info reading from Firebase ----------------->
         <script>
-          var out1 = document.getElementById("Fame_Name1");
-          var fameName1Ref = firebase.database().ref().child("farms/Hwawon Farm/farmName");
+            var out1 = document.getElementById("Fame_Name1");
+            var fameName1Ref = firebase.database().ref().child("farms/Hwawon Farm/farmName");
             fameName1Ref.on("value", snap => out1.innerText = snap.val());
            
             var out2 = document.getElementById("Fame_Name2");
-          var fameName2Ref = firebase.database().ref().child("farms/Samsan Farm/farmName");
+            var fameName2Ref = firebase.database().ref().child("farms/Samsan Farm/farmName");
             fameName2Ref.on("value", snap => out2.innerText = snap.val());
            
             var out3 = document.getElementById("Fame_Name3");
-          var fameName3Ref = firebase.database().ref().child("farms/Songji Farm/farmName");
+            var fameName3Ref = firebase.database().ref().child("farms/Songji Farm/farmName");
             fameName3Ref.on("value", snap => out3.innerText = snap.val());
             
             
             var out4 = document.getElementById("Fame_location1");
-          var location1Ref = firebase.database().ref().child("farms/Hwawon Farm/location");
+            var location1Ref = firebase.database().ref().child("farms/Hwawon Farm/location");
             location1Ref.on("value", snap => out4.innerText = snap.val());
             
             var out5 = document.getElementById("Fame_location2");
-          var location2Ref = firebase.database().ref().child("farms/Samsan Farm/location");
+            var location2Ref = firebase.database().ref().child("farms/Samsan Farm/location");
             location2Ref.on("value", snap => out5.innerText = snap.val());
             
             var out6 = document.getElementById("Fame_location3");
-          var location3Ref = firebase.database().ref().child("farms/Songji Farm/location");
+            var location3Ref = firebase.database().ref().child("farms/Songji Farm/location");
             location3Ref.on("value", snap => out6.innerText = snap.val());
             
             
             var out7 = document.getElementById("Fame_Price1");
-          var fameName1Ref = firebase.database().ref().child("farms/Hwawon Farm/price");
-            fameName1Ref.on("value", snap => out7.innerText = snap.val() + ' KRW');
+            var famePrice1Ref = firebase.database().ref().child("farms/Hwawon Farm/price");
+            famePrice1Ref.on("value", snap => out7.innerText = snap.val() + ' KRW');
            
             var out8 = document.getElementById("Fame_Price2");
-          var fameName1Ref = firebase.database().ref().child("farms/Samsan Farm/price");
-            fameName1Ref.on("value", snap => out8.innerText = snap.val() + ' KRW');
+            var famePrice2Ref = firebase.database().ref().child("farms/Samsan Farm/price");
+            famePrice2Ref.on("value", snap => out8.innerText = snap.val() + ' KRW');
             
             var out9 = document.getElementById("Fame_Price3");
-          var fameName1Ref = firebase.database().ref().child("farms/Songji Farm/price");
-            fameName1Ref.on("value", snap => out9.innerText = snap.val() + ' KRW' );
+            var famePrice3Ref = firebase.database().ref().child("farms/Songji Farm/price");
+            famePrice3Ref.on("value", snap => out9.innerText = snap.val() + ' KRW' );
             
             
             var out10 = document.getElementById("totalQuantity");
-          var fameName1Ref = firebase.database().ref().child("values/AddedCount");
-            fameName1Ref.on("value", snap => out10.innerText = snap.val() );
+            var TQRef = firebase.database().ref().child("AddedCount");
+            TQRef.on("value", snap => out10.innerText = snap.val() );
             
             var out11 = document.getElementById("totalPrice");
-          var fameName1Ref = firebase.database().ref().child("values/TotalPrice");
-            fameName1Ref.on("value", snap => out11.innerText = snap.val() + ' KRW' );
+            var TPRef = firebase.database().ref().child("TotalPrice");
+            TPRef.on("value", snap => out11.innerText = snap.val() + ' KRW' );
         </script>
         
-<!--
         <script>
-            function MoveToFriends() {
-//                document.getElementById('buy_num_in_farm3').value
-                var AddCountRef = firebase.database().ref();
+            function myConfirm() {
+                var totalQuant =  Number(document.getElementById('buy_num_in_farm1').value) + Number(document.getElementById('buy_num_in_farm2').value) + Number(document.getElementById('buy_num_in_farm3').value);
+                document.getElementById("totalQuantity").innerHTML = totalQuant;
                 
-                AddCountRef.update({
-                    "AddedCount" : 33
-                })
-//                dbRef.on ("value",
-//                         function(snap){
-//                    
-//                });
+//                var dbref = firebase.database().ref("AddedCount");
+//                dbref.setValue(totalQuant);
+                
+                
+                var CalcRef = firebase.database().ref("/");
+
+                CalcRef.update ({
+                    AddedCount: totalQuant,
+                    TotalPrice: Number(document.getElementById('buy_num_in_farm1').value)*700+ Number(document.getElementById('buy_num_in_farm2').value)*800 + Number(document.getElementById('buy_num_in_farm3').value)*860
+                });
+                
+//                famePrice1Ref.on("value", snap => var price1 = snap.val() );
+//                famePrice2Ref.on("value", snap => var price2 = snap.val() );
+//                famePrice3Ref.on("value", snap => var price3 = snap.val() );
+                
             }
-        </script>
--->
+       </script>
+
     
     
     </div>

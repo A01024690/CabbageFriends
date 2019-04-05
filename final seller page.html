@@ -45,25 +45,29 @@
     }
     #textmid{
       position: absolute;
-      width:300px;
-      height:400px;
-      left:800px;
-      top:240px;
+      width:200px;
+      height:200px;
+      left:700px;
+      top:-20px;
+    }
+    #imggg{
+    	height:400px;
+    	width:400px;
     }
 
     #textmid1{
       position: absolute;
-      left:800px;
+      left:850px;
       top:240px;
-      width:300px;
+      width:500px;
       height:400px;
     }
     #butto{
       position: absolute;
       width:300px;
       height:600px;
-      left:800px;
-      top:200px;
+      left:0px;
+      top:560px;
       background-color: #00ffbf;
       font-family: 'Permanent Marker', cursive;
     }
@@ -239,6 +243,13 @@ var database = firebase.database();
          <p class = "fontstyle">Price per KG:</p> <input type="text" id ="fprice" name="Price" style ="color : green;" size="30" placeholder="price" pattern="[0-9]{2,15}" required/>
     </form>
   </div>
+
+
+  <div id = "textmid">
+  <img  id = "imggg" alt = "p2" src = "./images/profile.png">
+  <br>
+  <form action="myform.cgi"> <input type="file" name="fileupload" value="fileupload"> <label for="fileupload" style="font-size : 20px" > Select a file to upload profile photo</label></form>
+  
 
   <!-- <form action="myform.cgi"> <input type="file"  name="fileupload" value="fileupload"> <label for="fileupload"> Select a file to upload profile photo</label></form> -->
   <button  onclick= "storeData()"  id ="butto" class ="round" style="font-size : 50px;height:150px;width:200px">Submit</button>

@@ -59,6 +59,9 @@
             var input = $(this).parent().find('input');
 
             var value = input.val();
+            if (value == 0){
+                return;
+            }
 
             if(+value > +min){
 

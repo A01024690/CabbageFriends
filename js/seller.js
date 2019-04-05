@@ -39,6 +39,7 @@ function storeData(){
 		alert("please input all the blank!")
 	}
 
+	if(farmName != "" && location != "" && price !=""){
 	var promise = firebase.database().ref("farms/" + farmName).update({
 				farmName: farmName,
 				location: location,
@@ -48,6 +49,7 @@ function storeData(){
 	promise.then(function() {
 			   window.location.href="you_are_a_cabbage_friend.html";    
 			});	
+	}
 }
 
 // function storeData(){

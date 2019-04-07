@@ -27,15 +27,15 @@
             
     var out7 = document.getElementById("Fame_Price1");
     var famePrice1Ref = firebase.database().ref().child("farms/Hwawon Farm/price");
-    famePrice1Ref.on("value", snap => out7.innerText = snap.val() + snap.val() * 0.9 + '  KRW (10% discounted!)');
+    famePrice1Ref.on("value", snap => out7.innerText = snap.val() + snap.val() * 0.9 + '  KRW (10% Off!)');
            
     var out8 = document.getElementById("Fame_Price2");
     var famePrice2Ref = firebase.database().ref().child("farms/Samsan Farm/price");
-    famePrice2Ref.on("value", snap => out8.innerText = snap.val() * 0.9 + '  KRW (10% discounted!)');
+    famePrice2Ref.on("value", snap => out8.innerText = snap.val() * 0.9 + '  KRW (10% Off!)');
             
     var out9 = document.getElementById("Fame_Price3");
     var famePrice3Ref = firebase.database().ref().child("farms/Songji Farm/price");
-    famePrice3Ref.on("value", snap => out9.innerText = snap.val() * 0.9 + '  KRW (10% discounted!)' );
+    famePrice3Ref.on("value", snap => out9.innerText = snap.val() * 0.9 + '  KRW (10% Off!)' );
 
 
 //------------------------ Calculation ------------------- 

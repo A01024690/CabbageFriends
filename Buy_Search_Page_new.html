@@ -66,7 +66,7 @@ $(document).ready(function(){
         });
     </script>
     
-    <style>
+<style>
         .search-container {
             text-align: center;
         }
@@ -127,7 +127,7 @@ $(document).ready(function(){
         .searched_item_info{
             display:grid;
             grid-gap: 5px;
-            grid-template-columns: 1fr 1fr;
+            grid-template-columns: 210px 1fr;
             grid-template-rows: 1fr 1fr 1fr;
             text-align: left;
         }
@@ -191,6 +191,9 @@ $(document).ready(function(){
         .buy_button {
             box-shadow: 0 5px 10px 0 rgba(0, 0, 0, 0.2), 0 6px 20px 0 rgba(0, 0, 0, 1);
         }
+        .buy_button a:visited {
+            color: white;
+        }
         .searched_item_img img {
             border-radius: 10px;
         }
@@ -199,6 +202,8 @@ $(document).ready(function(){
             display: inline;
             font-size: 20pt;
             font-weight: bold;
+            color:white;
+            text-shadow: 0 0 4px white;
         }
         body {
             background-image: url("./images/image01.jpg");

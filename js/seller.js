@@ -47,7 +47,7 @@ function storeData(){
 			});
 
 	promise.then(function() {
-			   window.location.href="you_are_a_cabbage_friend.html";    
+			   window.location.href="nowCabbageFriendSeller.html";    
 			});	
 	}
 }

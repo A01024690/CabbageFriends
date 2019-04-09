@@ -314,8 +314,12 @@ input{
       height:400px;
       left:350px;
       top:550px;
-      background-color: #f4a100;
-      font-family: 'Permanent Marker', cursive;
+      background-color: black;
+      font-style: url('https://fonts.googleapis.com/css?family=Raleway:900|Lato:300');
+      /*font-family: 'Permanent Marker', cursive;*/
+    }
+    #butto:hover{
+       background-color: #f4a100;
     }
 
     input[type=submit]:hover {

@@ -104,8 +104,9 @@ $(document).ready(function(){
         }
             
         .item-container {
-            margin-left: 100px;
-            margin-right: 300px;
+            width: 70%;
+            margin-left: 15%;
+            margin-right: 15%;
         }
 
         .item-container > div {
@@ -187,14 +188,19 @@ $(document).ready(function(){
             text-align: center;
             box-shadow: 0 5px 10px 0 rgba(0, 0, 0, 0.2), 0 6px 20px 0 rgba(0, 0, 0, 1);
         }
-        .confirm_button:hover{
-            background-color: #f4a100;
+        .confirm_button:hover {
+            color: black;
+            background-color: #F4A100;
         }
         .buy_button {
             box-shadow: 0 5px 10px 0 rgba(0, 0, 0, 0.2), 0 6px 20px 0 rgba(0, 0, 0, 1);
         }
         .buy_button a:visited {
             color: white;
+        }
+        .buy_button:hover {
+            color: black;
+            background-color: #F4A100;
         }
         .searched_item_img img {
             border-radius: 10px;
@@ -233,19 +239,19 @@ $(document).ready(function(){
   <nav class="navbar fixed-top navbar-expand-sm navbar-inverse justify-content-center" id="navbar2">
     <ul class="nav navbar-nav d-flex mr-auto w-10 justify-content-start" id="logoMenu">
       <li class="nav-link" id="logo">
-        <a href="about.html">Home</a>
+        <a href="login.html">Home</a>
       </li>
     </ul>
         <!-- WRITE -->
             <ul class="nav navbar-nav d-flex mx-auto w-100 justify-content-center" id="menu">
               <li class="nav-link" id="buy">
-                <a href="Buy_Search_Page_new.html">BUY</a>
+                <a href="list.html">BUY</a>
               </li>
               <li class="nav-link" id="rsrv">
-                  <a href="Reserve_Search_Page_new.html"style ="background-color: #24562D;color:white">RESERVE</a>
+                  <a href="reservation.html">RESERVE</a>
               </li>
               <li class="nav-link" id="sell">
-                <a href="newFinalSeller.html">SELL</a>
+                <a href="myinfo.html">SELL</a>
               </li>
             </ul>
         <!-- firebase count end -->

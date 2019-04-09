@@ -27,7 +27,7 @@
             
     var out7 = document.getElementById("Fame_Price1");
     var famePrice1Ref = firebase.database().ref().child("farms/Hwawon Farm/price");
-    famePrice1Ref.on("value", snap => out7.innerText = snap.val() + snap.val() * 0.9 + '  KRW (10% Off!)');
+    famePrice1Ref.on("value", snap => out7.innerText = snap.val() * 0.9 + '  KRW (10% Off!)');
            
     var out8 = document.getElementById("Fame_Price2");
     var famePrice2Ref = firebase.database().ref().child("farms/Samsan Farm/price");

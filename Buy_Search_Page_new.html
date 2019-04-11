@@ -6,18 +6,7 @@
 <!-- JQuery -->
 <style src="js/about.js"></style>
 <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.3.1/jquery.min.js"></script>
-<!--
-<script>
-$(document).ready(function(){
-  $("#aboutBtn").click(function(){
-    $("#title").fadeToggle(function(){
-      $("#title2").fadeToggle();
-    });
-  });
-});
 
-</script>
--->	
 	<!-- Bootstrap CSS -->
 	<link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/bootstrap/4.3.1/css/bootstrap.min.css" integrity="sha384-ggOyR0iXCbMQv3Xipma34MD+dH/1fQ784/j6cY/iJTQUOhcWr7x9JvoRxT2MZw1T" crossorigin="anonymous">
 	
@@ -67,26 +56,26 @@ $(document).ready(function(){
     </script>
     
 <style>
-        .search-container {
-            text-align: center;
+    .search-container {
+        text-align: center;
+    }
+        input[type=text] {
+            padding: 10px;
+            margin-top: 30px;
+            margin-bottom: 30px;
+            font-size: 25px;
+            border: solid 6px lightgray;
+            width: 500px;
+            height: 68px;
+            border-radius: 3px;
+            box-shadow: 0 5px 10px 0 rgba(0, 0, 0, 0.2), 0 6px 20px 0 rgba(0, 0, 0, 1);
         }
-            input[type=text] {
-                padding: 10px;
-                margin-top: 30px;
-                margin-bottom: 30px;
-                font-size: 25px;
-                border: solid 6px lightgray;
-                width: 500px;
-                height: 68px;
-                border-radius: 3px;
-                box-shadow: 0 5px 10px 0 rgba(0, 0, 0, 0.2), 0 6px 20px 0 rgba(0, 0, 0, 1);
-            }
-            .search-container button {
-              background: lightgray;
-              border: none;
-              cursor: pointer;
-                margin-top: 30px;
-                margin-bottom: 30px;
+        .search-container button {
+            background: lightgray;
+            border: none;
+            cursor: pointer;
+            margin-top: 30px;
+            margin-bottom: 30px;
                 padding:0px;
                 border: solid 7px lightgray;
                 display:inline;
@@ -180,6 +169,7 @@ $(document).ready(function(){
         }
       
         .confirm_button {
+            border: none;
             width: 180px;
             height: 70px;
             border-radius: 10px;
@@ -195,6 +185,7 @@ $(document).ready(function(){
         }
         .buy_button {
             box-shadow: 0 5px 10px 0 rgba(0, 0, 0, 0.2), 0 6px 20px 0 rgba(0, 0, 0, 1);
+            text-decoration: none;
         }
         .buy_button:hover {
             color: black;
@@ -223,15 +214,6 @@ $(document).ready(function(){
 </head>
 
 <body>
-<!--<img src="./images/image01.jpg" id="bgblur" alt="bgImage">-->
-<!-- cabbages saved 
-  <div class="col-md-8 col-md-offset-2" id="count">
-    <span id="spanCount"></span><p>CABBAGES SAVED!</p>
-  </div>
--->
-
-
-
   <!-- logo -->
 <div class="container" id="menuContainer">
   <nav class="navbar fixed-top navbar-expand-sm navbar-inverse justify-content-center" id="navbar2">
@@ -241,24 +223,23 @@ $(document).ready(function(){
       </li>
     </ul>
         <!-- WRITE -->
-            <ul class="nav navbar-nav d-flex mx-auto w-100 justify-content-center" id="menu">
-              <li class="nav-link" id="buy">
-                <a href="Buy_Search_Page_new.html" style="background-color:#24562D; color:white">BUY</a>
-              </li>
-              <li class="nav-link" id="rsrv">
-                  <a href="Reserve_Search_Page_new.html">RESERVE</a>
-              </li>
-              <li class="nav-link" id="sell">
+        <ul class="nav navbar-nav d-flex mx-auto w-100 justify-content-center" id="menu">
+            <li class="nav-link" id="buy">
+            <a href="Buy_Search_Page_new.html" style="background-color:#24562D; color:white">BUY</a>
+            </li>
+            <li class="nav-link" id="rsrv">
+                <a href="Reserve_Search_Page_new.html">RESERVE</a>
+            </li>
+            <li class="nav-link" id="sell">
                 <a href="newFinalSeller.html">SELL</a>
-              </li>
-            </ul>
+            </li>
+        </ul>
         <!-- firebase count end -->
         <ul class="nav navbar-nav d-flex ml-auto w-10 justify-content-end" id="loginMenu">
           <li id="loginButton">
             <a href="login.html">Login</a>
           </li>
         </ul>
-
       </nav>
 </div>
 <!------------------------------ CONTENT ---------------------------------->
@@ -326,7 +307,7 @@ $(document).ready(function(){
             <button type="submit" class="confirm_button" onclick="myConfirm(); return false;"><b>CONFIRM</b>
             </button>
             <div class="buy_button">
-            <a href="you_are_a_cabbage_friend.html"><div><b>BUY</b></div></a>
+            <a href="you_are_a_cabbage_friend.html" style="text-decoration: none; color:#24562D;"><div><b>BUY</b></div></a>
             </div>
         </form>
     </div>

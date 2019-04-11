@@ -6,18 +6,7 @@
 <!-- JQuery -->
 <style src="js/about.js"></style>
 <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.3.1/jquery.min.js"></script>
-<!--
-<script>
-$(document).ready(function(){
-  $("#aboutBtn").click(function(){
-    $("#title").fadeToggle(function(){
-      $("#title2").fadeToggle();
-    });
-  });
-});
 
-</script>
--->	
 	<!-- Bootstrap CSS -->
 	<link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/bootstrap/4.3.1/css/bootstrap.min.css" integrity="sha384-ggOyR0iXCbMQv3Xipma34MD+dH/1fQ784/j6cY/iJTQUOhcWr7x9JvoRxT2MZw1T" crossorigin="anonymous">
 	
@@ -40,11 +29,9 @@ $(document).ready(function(){
   
 
 
-  <!-- <script src="https://www.gstatic.com/firebasejs/5.9.2/firebase.js"></script> -->
   <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.3.1/jquery.min.js"></script>
 
     <script src="https://www.gstatic.com/firebasejs/5.9.2/firebase.js"></script>
-    <!-- <script src="https://www.gstatic.com/firebasejs/5.9.2/firebase-seller.js"></script> -->
     <script src = "js/seller.js"></script></script>
 
   <script>
@@ -64,13 +51,6 @@ $(document).ready(function(){
 
 <body>
 <img src="./images/bg.jpg" id="bgblur" alt="bgImage">
-<!-- cabbages saved 
-  <div class="col-md-8 col-md-offset-2" id="count">
-    <span id="spanCount"></span><p>CABBAGES SAVED!</p>
-  </div>
--->
-
-
 
   <!-- logo -->
 <div class="container" id="menuContainer">
@@ -81,20 +61,6 @@ $(document).ready(function(){
       </li>
     </ul>
         <!-- top nav bar -->
-        
-        <!-- firebase count -->
-        <!-- READ -->
-        <!-- we dont need this function in template
-        <script>
-          var output = document.getElementById("spanCount");
-          var dbRef = firebase.database().ref().child("Count");
-          dbRef.on (
-            "value",    //event to read static snapshot of db at initial call, and future chg
-            function(snap){        // event callback receives snapshot
-              output.innerText = snap.val();
-            });
-        </script>
-      -->
         <!-- WRITE -->
         <script>
         
@@ -120,15 +86,6 @@ $(document).ready(function(){
 
       </nav>
 </div>
-  
-<!-- Victor's Side Nav 
-<div id="mySidenav" class="sidenav" >
-    <a href="#" id="about">placeholder</a>
-    <a href="#" id="maps">Maps</a>
-    <a href="#" id="blog">placeholder</a>
-    <a href="#" id="contact">placeholder</a>
-</div>
--->
 
 <!------------------------------ CONTENT ---------------------------------->
 
@@ -162,16 +119,14 @@ $(document).ready(function(){
   <form action="myform.cgi"> <input type="file" name="fileupload" value="fileupload" id ="upfile"> <label for="fileupload" style="font-size : 18px"  size ="20"> Select a file to upload profile photo</label></form>
   
 
-  <!-- <form action="myform.cgi"> <input type="file"  name="fileupload" value="fileupload"> <label for="fileupload"> Select a file to upload profile photo</label></form> -->
   </div>
-  <button  onclick= "storeData()"  id ="butto" class ="round" style="font-size : 50px;height:120px;width:200px">SUBMIT</button>
+  <button  onclick= "storeData()"  id ="butto" class ="round" style="font-size : 40px;height:120px;width:200px; border: none;">SUBMIT</button>
   
   <div class="col-md-6 col-md-offset-3" id="title2">
 
 </div>
 
   
-<!--<button class="col-md-4 col-md-offset-4" id="aboutBtn">Click to Learn More About Us</button>-->
 <!-------------------------- end of CONTENT ---------------------------------->    
 
     
@@ -183,7 +138,6 @@ $(document).ready(function(){
 
 
 	<!-- Bootstrap CDN -->
-	<!--<script src="https://code.jquery.com/jquery-3.3.1.slim.min.js" integrity="sha384-q8i/X+965DzO0rT7abK41JStQIAqVgRVzpbzo5smXKp4YfRvH+8abtTE1Pi6jizo" crossorigin="anonymous"></script>-->
 	<script src="https://cdnjs.cloudflare.com/ajax/libs/popper.js/1.14.7/umd/popper.min.js" integrity="sha384-UO2eT0CpHqdSJQ6hJty5KVphtPhzWj9WO1clHTMGa3JDZwrnQq4sF86dIHNDz0W1" crossorigin="anonymous"></script>
 	<script src="https://stackpath.bootstrapcdn.com/bootstrap/4.3.1/js/bootstrap.min.js" integrity="sha384-JjSmVgyd0p3pXB1rRibZUAYoIIy6OrQ6VrjIEaFf/nJGzIxFDsf4x0xIM+B07jRM" crossorigin="anonymous"></script>
 </body>

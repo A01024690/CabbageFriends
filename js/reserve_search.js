@@ -40,20 +40,20 @@
 
 //----------------- Price Calculation ------------------- 
 function myConfirm() {
-            console.log("works");
-            var totalQuant =  Number(document.getElementById('buy_num_in_farm1').value) + Number(document.getElementById('buy_num_in_farm2').value) + Number(document.getElementById('buy_num_in_farm3').value);
+    console.log("works");
+    var totalQuant =  Number(document.getElementById('buy_num_in_farm1').value) + Number(document.getElementById('buy_num_in_farm2').value) + Number(document.getElementById('buy_num_in_farm3').value);
             
-            var CalcRef = firebase.database().ref("/");
-            CalcRef.update ({
-            AddedCount: totalQuant,
-            TotalPrice: Number(document.getElementById('buy_num_in_farm1').value) * 630 + Number(document.getElementById('buy_num_in_farm2').value) * 720 + Number(document.getElementById('buy_num_in_farm3').value) * 774
-            });
+    var CalcRef = firebase.database().ref("/");
+    CalcRef.update ({
+    AddedCount: totalQuant,
+    TotalPrice: Number(document.getElementById('buy_num_in_farm1').value) * 630 + Number(document.getElementById('buy_num_in_farm2').value) * 720 + Number(document.getElementById('buy_num_in_farm3').value) * 774
+    });
             
-            var out10 = document.getElementById("totalQuantity");
-            var TQRef = firebase.database().ref().child("AddedCount");
-            TQRef.on("value", snap => out10.innerText = snap.val() );
+    var out10 = document.getElementById("totalQuantity");
+    var TQRef = firebase.database().ref().child("AddedCount");
+    TQRef.on("value", snap => out10.innerText = snap.val() );
             
-            var out11 = document.getElementById("totalPrice");
-            var TPRef = firebase.database().ref().child("TotalPrice");
-            TPRef.on("value", snap => out11.innerText = snap.val() + ' KRW' );
-        }
+    var out11 = document.getElementById("totalPrice");
+    var TPRef = firebase.database().ref().child("TotalPrice");
+    TPRef.on("value", snap => out11.innerText = snap.val() + ' KRW' );
+}

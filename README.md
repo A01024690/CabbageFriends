@@ -3,8 +3,6 @@
 This folder contains a collection for making an web app. To see the database, you can visit https://projectx-cabbagefriends.firebaseio.com/.
 To see the authentication info, you can visit https://console.firebase.google.com/u/0/project/project1-ea691/authentication/users/.
 
-    This file is a sample json file with collections that are used in the demo examples.
-
  	index.html
 
     This file is our landing page.

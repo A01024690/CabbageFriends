@@ -82,20 +82,7 @@ body{
   #logoMenu{
     padding-right: 0px !important;
   }
-  /*
-  #rsrv{
-    background-color: #;
-    border-radius: 20px;
-  }
-    #rsrv a:hover{
-    transition: 1s !important;
-    border-radius: 30px;
-    font-size: 25pt;
-  }
-  */
-  /*#menu li a:hover{
-        background-color: #F4A100;
-  }*/
+
     #menu{
     z-index: 1;
     margin-top: 35px;

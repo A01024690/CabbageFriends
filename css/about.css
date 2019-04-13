@@ -1,26 +1,16 @@
-/* rehaul */
+body {
+  color: white;
 
-
-
-
-
-/* ------------------------------------- */
-body{
-  color:white;
-  
 }
 
-
-/* --------------------- background blur ---------------------- */
-#bgblur{
+#bgblur {
   position: absolute;
   width: 100%;
   height: 100%;
 }
-/* ----------------------------------------------------------- */
 
 #navbar2 {
-	position: absolute;
+  position: absolute;
   text-transform: uppercase;
   background: #222222;
   padding: 0px;
@@ -30,8 +20,9 @@ body{
   font-family: 'lato:700', sans-serif;
   font-size: 20pt;
 }
+
 #navbar {
-	position: absolute;
+  position: absolute;
   background: #222222;
   padding: 0px;
   margin: 0px;
@@ -41,114 +32,74 @@ body{
   font-size: 20pt;
 }
 
+#navbar #menu>li>a {
+  background-color: white;
+  border-radius: 6px;
+  color: rgb(0, 0, 0);
+  padding: 20px;
+  padding-left: 40px;
+  padding-right: 40px;
+}
 
-  
-  #navbar #menu>li>a {
-    background-color: white;
-    border-radius: 6px;
-    color: rgb(0, 0, 0);
-    padding: 20px;
-    padding-left: 40px;
-    padding-right: 40px;
-  }
-  
-  #navbar #menu>li>a:hover {
-    background-color: #F4A100;
-    transition: 0.2s;
-  }
-  
-  #loginMenu>#loginButton>a {
-    color: white;
-    padding: 25px;
-    
-  }
-  #loginMenu>#loginButton>a:hover {
-    color: #F4A100;
-    transition: 0.2s;
-    
-  }
+#navbar #menu>li>a:hover {
+  background-color: #F4A100;
+  transition: 0.2s;
+}
 
-	#logoMenu>#logo>a{
-    
-		color:white;
-		padding: 25px;
-	}
-	#logoMenu>#logo>a:hover{
-		color:#F4A100;
-    transition: 0.2s;
-	}
+#loginMenu>#loginButton>a {
+  color: white;
+  padding: 25px;
 
-  /*
-  #rsrv{
-    background-color: #;
-    border-radius: 20px;
-  }
-    #rsrv a:hover{
-    transition: 1s !important;
-    border-radius: 30px;
-    font-size: 25pt;
-  }
-  */
-  
-  #menu{
+}
 
-    margin-bottom: 35px;
-  }
-  
-  #buy{
-    margin-right: 100px;
-  }
-  #sell{
-    margin-left: 100px;
-  }
+#loginMenu>#loginButton>a:hover {
+  color: #F4A100;
+  transition: 0.2s;
 
+}
 
+#logoMenu>#logo>a {
 
-  /*----------------------------------- my side bar/nav alternative -------------------------------*/
-  #mySidenav a {
-    position: absolute; /* Position them relative to the browser window */
-    left: -80px; /* Position them outside of the screen */
-    transition: 0.3s; /* Add transition on hover */
-    padding: 15px; /* 15px padding */
-    width: 100px; /* Set a specific width */
-    text-decoration: none; /* Remove underline */
-    font-size: 20px; /* Increase font size */
-    color: white; /* White text color */
-    border-radius: 0 5px 5px 0; /* Rounded corners on the top right and bottom right side */
-    font-family: 'Raleway', sans-serif;
-  }
-  
-  #mySidenav a:hover {
-    left: 0; /* On mouse-over, m  ake the elements appear as they should */
-  }
-  
-  /* The about link: 20px from the top with a green background */
-  #about {
-    top: 170px;
-    background-color: #F4A100;
-  }
-  /*
-  #maps {
-    top: 230px;
-    background-color: #222222; 
-  }
-  */
-  #blog {
-    top: 230px;
-    background-color: #F4A100; 
-  }
+  color: white;
+  padding: 25px;
+}
 
-  #contact {
-    top: 290px;
-    background-color: #F4A100; 
-    border:none;
-  }
+#logoMenu>#logo>a:hover {
+  color: #F4A100;
+  transition: 0.2s;
+}
 
-/*-------------------------------------------------------------------------------------------------*/
+#menu {
+
+  margin-bottom: 35px;
+}
+
+#buy {
+  margin-right: 100px;
+}
+
+#sell {
+  margin-left: 100px;
+}
+
+#about {
+  top: 170px;
+  background-color: #F4A100;
+}
+
+#blog {
+  top: 230px;
+  background-color: #F4A100;
+}
+
+#contact {
+  top: 290px;
+  background-color: #F4A100;
+  border: none;
+}
 
 /* ----- about content ----- */
-
-#aboutBtn{
+#aboutBtn {
   z-index: 1;
   border-radius: 10px;
   background: transparent;
@@ -157,29 +108,34 @@ body{
   margin-top: 700px;
   position: absolute;
 }
-#aboutBtn:focus, #aboutBtn:active, #aboutBtn:active, #aboutBtn:focus:active{
+
+#aboutBtn:focus,
+#aboutBtn:active,
+#aboutBtn:active,
+#aboutBtn:focus:active {
   background-image: none !important;
   outline: none !important;
   -webkit-box-shadow: none !important;
   box-shadow: none !important;
 }
-#aboutContent{
+
+#aboutContent {
   background-color: black;
   opacity: 0.5;
-	position: absolute;
-	overflow: auto;
+  position: absolute;
+  overflow: auto;
   height: 650px;
   font-size: 20pt;
   text-align: center;
-  /*text-shadow: -1px 0 #222222, 0 1px #222222, 1px 0 #222222, 0 -1px #222222;*/
   margin-top: 130px;
 }
 
-#titleCenter{
+#titleCenter {
   display: flex;
   justify-content: center;
 }
-#title{
+
+#title {
   top: 20px;
   position: absolute;
   z-index: 1;
@@ -187,7 +143,8 @@ body{
   font-size: 50pt;
   font-family: 'Raleway', sans-serif;
 }
-#title2{
+
+#title2 {
   text-align: center;
   z-index: 1 !important;
   top: 350px;
@@ -195,15 +152,17 @@ body{
   font-family: 'lato', sans-serif;
   font-size: 25pt;
   padding-top: 100px;
-  
 }
-#title2 #spanBuy, #title2 #spanReserve{
+
+#title2 #spanBuy,
+#title2 #spanReserve {
   z-index: 1;
   font-size: 25pt;
   color: #f4a100;
   font-family: 'lato:700', sans-serif;
 }
-#spanCount{
+
+#spanCount {
   font-size: 100pt;
   color: #f4a100;
   font-weight: bolder;
@@ -213,33 +172,34 @@ body{
 
 /*hides scrollbar*/
 ::-webkit-scrollbar {
-  width: 0px;  
+  width: 0px;
   background: transparent;
 }
+
 i {
   border: solid white;
   border-width: 0 3px 3px 0;
   display: inline-block;
   padding: 10px;
 }
+
 .down {
   transform: rotate(45deg);
   -webkit-transform: rotate(45deg);
 }
 
-
-
-#count{
+#count {
   line-height: 1;
   z-index: 1;
   top: 20%;
   position: absolute;
 }
-#count p{
+
+#count p {
   font-size: 75pt;
   font-family: 'Raleway', sans-serif;
 }
-p{
+
+p {
   text-align: center;
 }
-

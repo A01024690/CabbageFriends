@@ -42,7 +42,7 @@
 function myConfirm() {
     console.log("works");
     
-    var totalQuant =  Number(document.getElementById('buy_num_in_farm1').value) + Number(document.getElementById('buy_num_in_farm2').value) + Number(document.getElementById('buy_num_in_farm3').value)
+    var totalQuant = Number(document.getElementById('buy_num_in_farm1').value) + Number(document.getElementById('buy_num_in_farm2').value) + Number(document.getElementById('buy_num_in_farm3').value);
                 
     var CalcRef = firebase.database().ref("/");
     CalcRef.update ({

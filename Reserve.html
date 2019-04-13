@@ -3,23 +3,12 @@
 <head>
   <meta charset="utf-8">
   <title>Cabbage Friends</title>
-<!-- JQuery -->
-<style src="js/about.js"></style>
-<script src="https://ajax.googleapis.com/ajax/libs/jquery/3.3.1/jquery.min.js"></script>
-<!--
-<script>
-$(document).ready(function(){
-  $("#aboutBtn").click(function(){
-    $("#title").fadeToggle(function(){
-      $("#title2").fadeToggle();
-    });
-  });
-});
+  <!-- JQuery -->
+  <style src="js/about.js"></style>
+  <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.3.1/jquery.min.js"></script>
 
-</script>
--->	
-	<!-- Bootstrap CSS -->
-	<link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/bootstrap/4.3.1/css/bootstrap.min.css" integrity="sha384-ggOyR0iXCbMQv3Xipma34MD+dH/1fQ784/j6cY/iJTQUOhcWr7x9JvoRxT2MZw1T" crossorigin="anonymous">
+  <!-- Bootstrap CSS -->
+  <link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/bootstrap/4.3.1/css/bootstrap.min.css" integrity="sha384-ggOyR0iXCbMQv3Xipma34MD+dH/1fQ784/j6cY/iJTQUOhcWr7x9JvoRxT2MZw1T" crossorigin="anonymous">
 	
   <meta content="width=device-width, initial-scale=1.0" name="viewport">
   <meta content="" name="keywords">
@@ -81,11 +70,11 @@ $(document).ready(function(){
                 box-shadow: 0 5px 10px 0 rgba(0, 0, 0, 0.2), 0 6px 20px 0 rgba(0, 0, 0, 1);
             }
             .search-container button {
-              background: lightgray;
-              border: none;
-              cursor: pointer;
-                margin-top: 30px;
-                margin-bottom: 30px;
+		background: lightgray;
+              	border: none;
+                cursor: pointer;
+		margin-top: 30px;
+             	margin-bottom: 30px;
                 padding:0px;
                 border: solid 7px lightgray;
                 display:inline;
@@ -97,53 +86,53 @@ $(document).ready(function(){
                 height:54px;
                 width: auto;
                 padding:0px;
-        }
-        .map {
-            margin:30px;
+       	   }
+          .map {
+               margin:30px;
             
-        }
+          }
             
-        .item-container {
-            width: 70%;
-            margin-left: 15%;
-            margin-right: 15%;
-        }
+          .item-container {
+              width: 70%;
+              margin-left: 15%;
+              margin-right: 15%;
+          }
 
-        .item-container > div {
-            background-color: #f1f1f1;
-            margin: 20px;
-            text-align: center;
-            font-size: 30px;
-            width: calc(100%-40px);
-            height: 200px;
-            border-radius: 10px;
-        }
-        .serched_item_box{
-            display:grid;
-            grid-gap:20px;
-            grid-template-columns: 260px 1fr 100px;
-            box-shadow: 0 5px 10px 0 rgba(0, 0, 0, 0.2), 0 6px 20px 0 rgba(0, 0, 0, 1);
-        }
-        .searched_item_info{
-            display:grid;
-            grid-gap: 5px;
-            grid-template-columns: 210px 1fr;
-            grid-template-rows: 1fr 1fr 1fr;
-            text-align: left;
-        }
-        .searched_item_info > div {
-            margin: 10px;
-        }
-        .searched_item_img{
-            display:inline;
-            height: auto;
-            width: auto;
-        }
-        .searched_item_img > img {
-            text-align: center;
-            height: 200px;
-            width: 260px;
-            float: left;
+         .item-container > div {
+             background-color: #f1f1f1;
+             margin: 20px;
+             text-align: center;
+             font-size: 30px;
+             width: calc(100%-40px);
+             height: 200px;
+             border-radius: 10px;
+         }
+         .serched_item_box{
+             display:grid;
+             grid-gap:20px;
+             grid-template-columns: 260px 1fr 100px;
+             box-shadow: 0 5px 10px 0 rgba(0, 0, 0, 0.2), 0 6px 20px 0 rgba(0, 0, 0, 1);
+         }
+         .searched_item_info{
+             display:grid;
+             grid-gap: 5px;
+             grid-template-columns: 210px 1fr;
+             grid-template-rows: 1fr 1fr 1fr;
+             text-align: left;
+         }
+         .searched_item_info > div {
+             margin: 10px;
+         }
+         .searched_item_img{
+             display:inline;
+             height: auto;
+             width: auto;
+         }
+         .searched_item_img > img {
+             text-align: center;
+             height: 200px;
+             width: 260px;
+             float: left;
         }
         .quantity_bar {
             padding: 10px;
@@ -179,6 +168,7 @@ $(document).ready(function(){
         }
       
         .confirm_button {
+            border: none;
             width: 180px;
             height: 70px;
             border-radius: 10px;
@@ -225,15 +215,6 @@ $(document).ready(function(){
 </head>
 
 <body>
-<!--<img src="./images/image01.jpg" id="bgblur" alt="bgImage">-->
-<!-- cabbages saved 
-  <div class="col-md-8 col-md-offset-2" id="count">
-    <span id="spanCount"></span><p>CABBAGES SAVED!</p>
-  </div>
--->
-
-
-
   <!-- logo -->
 <div class="container" id="menuContainer">
   <nav class="navbar fixed-top navbar-expand-sm navbar-inverse justify-content-center" id="navbar2">
@@ -245,7 +226,7 @@ $(document).ready(function(){
         <!-- WRITE -->
             <ul class="nav navbar-nav d-flex mx-auto w-100 justify-content-center" id="menu">
               <li class="nav-link" id="buy">
-                <a href="index.html">BUY</a>
+                <a href="Buy_Search_Page_new.html">BUY</a>
               </li>
               <li class="nav-link" id="rsrv">
                   <a href="Reserve_Search_Page_new.html" style="background-color:#24562D; color: white">RESERVE</a>
@@ -257,7 +238,7 @@ $(document).ready(function(){
         <!-- firebase count end -->
         <ul class="nav navbar-nav d-flex ml-auto w-10 justify-content-end" id="loginMenu">
           <li id="loginButton">
-            <a href="index.html">Login</a>
+            <a href="login.html">Login</a>
           </li>
         </ul>
 
@@ -328,7 +309,7 @@ $(document).ready(function(){
             <button type="submit" class="confirm_button" onclick="myConfirm(); return false;"><b>CONFIRM</b>
             </button>
             <div class="buy_button">
-            <a href="you_are_a_cabbage_friend.html"><div><b>RESERVE</b></div></a>
+            <a href="you_are_a_cabbage_friend.html" style="text-decoration: none; color:#24562D;"><div><b>RESERVE</b></div></a>
             </div>
         </form>
     </div>
@@ -342,11 +323,9 @@ $(document).ready(function(){
   <script src="lib/php-mail-form/validate.js"></script>
   <script src="js/reserve_search.js"></script>
 
-
-
-	<!-- Bootstrap CDN -->
-	<!--<script src="https://code.jquery.com/jquery-3.3.1.slim.min.js" integrity="sha384-q8i/X+965DzO0rT7abK41JStQIAqVgRVzpbzo5smXKp4YfRvH+8abtTE1Pi6jizo" crossorigin="anonymous"></script>-->
-	<script src="https://cdnjs.cloudflare.com/ajax/libs/popper.js/1.14.7/umd/popper.min.js" integrity="sha384-UO2eT0CpHqdSJQ6hJty5KVphtPhzWj9WO1clHTMGa3JDZwrnQq4sF86dIHNDz0W1" crossorigin="anonymous"></script>
-	<script src="https://stackpath.bootstrapcdn.com/bootstrap/4.3.1/js/bootstrap.min.js" integrity="sha384-JjSmVgyd0p3pXB1rRibZUAYoIIy6OrQ6VrjIEaFf/nJGzIxFDsf4x0xIM+B07jRM" crossorigin="anonymous"></script>
+  <!-- Bootstrap CDN -->
+  <!--<script src="https://code.jquery.com/jquery-3.3.1.slim.min.js" integrity="sha384-q8i/X+965DzO0rT7abK41JStQIAqVgRVzpbzo5smXKp4YfRvH+8abtTE1Pi6jizo" crossorigin="anonymous"></script>-->
+  <script src="https://cdnjs.cloudflare.com/ajax/libs/popper.js/1.14.7/umd/popper.min.js" integrity="sha384-UO2eT0CpHqdSJQ6hJty5KVphtPhzWj9WO1clHTMGa3JDZwrnQq4sF86dIHNDz0W1" crossorigin="anonymous"></script>
+  <script src="https://stackpath.bootstrapcdn.com/bootstrap/4.3.1/js/bootstrap.min.js" integrity="sha384-JjSmVgyd0p3pXB1rRibZUAYoIIy6OrQ6VrjIEaFf/nJGzIxFDsf4x0xIM+B07jRM" crossorigin="anonymous"></script>
 </body>
 </html>

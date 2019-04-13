@@ -315,8 +315,7 @@ input{
       left:350px;
       top:550px;
       background-color: black;
-      font-style: url('https://fonts.googleapis.com/css?family=Raleway:900|Lato:300');
-      /*font-family: 'Permanent Marker', cursive;*/
+      font-family: 'Raleway', 'sans-serif';
     }
     #butto:hover{
        background-color: #f4a100;
@@ -355,8 +354,10 @@ input{
   }
 
   #upfile{
+    border: none;
+    outline: none;
     size:20px;
     width:410px;
     background-color:#24562D;
-    font-color:black;
+    color:white;
   }

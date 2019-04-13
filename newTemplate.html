@@ -6,18 +6,6 @@
 <!-- JQuery -->
 <style src="js/about.js"></style>
 <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.3.1/jquery.min.js"></script>
-<!--
-<script>
-$(document).ready(function(){
-  $("#aboutBtn").click(function(){
-    $("#title").fadeToggle(function(){
-      $("#title2").fadeToggle();
-    });
-  });
-});
-
-</script>
--->	
 	<!-- Bootstrap CSS -->
 	<link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/bootstrap/4.3.1/css/bootstrap.min.css" integrity="sha384-ggOyR0iXCbMQv3Xipma34MD+dH/1fQ784/j6cY/iJTQUOhcWr7x9JvoRxT2MZw1T" crossorigin="anonymous">
 	
@@ -55,14 +43,6 @@ $(document).ready(function(){
 
 <body>
 <img src="./images/bg.jpg" id="bgblur" alt="bgImage">
-<!-- cabbages saved 
-  <div class="col-md-8 col-md-offset-2" id="count">
-    <span id="spanCount"></span><p>CABBAGES SAVED!</p>
-  </div>
--->
-
-
-
   <!-- logo -->
 <div class="container" id="menuContainer">
   <nav class="navbar fixed-top navbar-expand-sm navbar-inverse justify-content-center" id="navbar2">
@@ -71,21 +51,7 @@ $(document).ready(function(){
         <a href="login.html">Home</a>
       </li>
     </ul>
-        <!-- top nav bar -->
-        
-        <!-- firebase count -->
-        <!-- READ -->
-        <!-- we dont need this function in template
-        <script>
-          var output = document.getElementById("spanCount");
-          var dbRef = firebase.database().ref().child("Count");
-          dbRef.on (
-            "value",    //event to read static snapshot of db at initial call, and future chg
-            function(snap){        // event callback receives snapshot
-              output.innerText = snap.val();
-            });
-        </script>
-      -->
+
         <!-- WRITE -->
         <script>
         
@@ -110,15 +76,6 @@ $(document).ready(function(){
 
       </nav>
 </div>
-  
-<!-- Victor's Side Nav 
-<div id="mySidenav" class="sidenav" >
-    <a href="#" id="about">placeholder</a>
-    <a href="#" id="maps">Maps</a>
-    <a href="#" id="blog">placeholder</a>
-    <a href="#" id="contact">placeholder</a>
-</div>
--->
 
 <!------------------------------ CONTENT ---------------------------------->
 
@@ -133,7 +90,6 @@ $(document).ready(function(){
 </div>
 
   
-<!--<button class="col-md-4 col-md-offset-4" id="aboutBtn">Click to Learn More About Us</button>-->
 <!-------------------------- end of CONTENT ---------------------------------->    
 
     

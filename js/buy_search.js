@@ -38,15 +38,24 @@
     famePrice3Ref.on("value", snap => out9.innerText = snap.val() + ' KRW' );
 
 
-//------------------------ Calculation ------------------- 
+//----------------- Price Calculation ------------------- 
 function myConfirm() {
     console.log("works");
+<<<<<<< HEAD
     var totalQuant = Number(document.getElementById('buy_num_in_farm1').value) + Number(document.getElementById('buy_num_in_farm2').value) + Number(document.getElementById('buy_num_in_farm3').value);
             
     var CalcRef = firebase.database().ref("/");
     CalcRef.update ({
         AddedCount: totalQuant,
         TotalPrice: Number(document.getElementById('buy_num_in_farm1').value) * 2000 + Number(document.getElementById('buy_num_in_farm2').value) * 1800 + Number(document.getElementById('buy_num_in_farm3').value) * 2100
+=======
+    var totalQuant =  Number(document.getElementById('buy_num_in_farm1').value) + Number(document.getElementById('buy_num_in_farm2').value) + Number(document.getElementById('buy_num_in_farm3').value);
+            
+    var CalcRef = firebase.database().ref("/");
+    CalcRef.update ({
+    AddedCount: totalQuant,
+    TotalPrice: Number(document.getElementById('buy_num_in_farm1').value) * 700 + Number(document.getElementById('buy_num_in_farm2').value) * 800 + Number(document.getElementById('buy_num_in_farm3').value) * 860
+>>>>>>> 680cecae4367aecbc1b9a4123eba2209cd383a88
     });
             
     var out10 = document.getElementById("totalQuantity");
@@ -56,4 +65,8 @@ function myConfirm() {
     var out11 = document.getElementById("totalPrice");
     var TPRef = firebase.database().ref().child("TotalPrice");
     TPRef.on("value", snap => out11.innerText = snap.val() + ' KRW' );
+<<<<<<< HEAD
         }
+=======
+}
+>>>>>>> 680cecae4367aecbc1b9a4123eba2209cd383a88

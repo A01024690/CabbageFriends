@@ -11,15 +11,15 @@ login.html
 
     This is our login page.
 
-Buy_Search_Page_new.html
+Buy.html
 
     This is the page for buying cabbages.
     
-Reserve_Search_Page_new.html
+Reserve.html
 
     This is the page for reserving cabbages.
     
-newFinalSeller.html
+Sell.html
 
     This is the page for registering a seller.
     
@@ -27,10 +27,10 @@ newTemplate.html
 
     This is the template page.
     
-nowCabbageFriendSeller.html
+CFforSeller.html
 
     This page is shown when a seller is registered.
         
-you_are_a_cabbage_friend.html
+CFforBuyer.html
     
     This page is shown when a user buy or reserve cabbages. 

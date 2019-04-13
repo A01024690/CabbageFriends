@@ -41,15 +41,13 @@
 //----------------- Price Calculation ------------------- 
 function myConfirm() {
     console.log("works");
+    
     var totalQuant =  Number(document.getElementById('buy_num_in_farm1').value) + Number(document.getElementById('buy_num_in_farm2').value) + Number(document.getElementById('buy_num_in_farm3').value)
-    };
-            
+                
     var CalcRef = firebase.database().ref("/");
     CalcRef.update ({
-
         AddedCount: totalQuant,
         TotalPrice: Number(document.getElementById('buy_num_in_farm1').value) * 1800 + Number(document.getElementById('buy_num_in_farm2').value) * 1620 + Number(document.getElementById('buy_num_in_farm3').value) * 1890
-
     });
             
     var out10 = document.getElementById("totalQuantity");

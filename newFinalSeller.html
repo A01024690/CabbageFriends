@@ -18,15 +18,22 @@
   <link href="lib/bootstrap/css/bootstrap.min.css" rel="stylesheet">
 
   <!-- Main Stylesheet File -->
-  <link href="css/you_are_a_cabbage_friend.css" rel="stylesheet">
+  <link href="css/newSeller.css" rel="stylesheet">
 
   <style>
       @import url('https://fonts.googleapis.com/css?family=Raleway:900|Lato:300');
+
+  
+  
   </style>
   
 
 
-  <script src="https://www.gstatic.com/firebasejs/5.9.2/firebase.js"></script>
+  <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.3.1/jquery.min.js"></script>
+
+    <script src="https://www.gstatic.com/firebasejs/5.9.2/firebase.js"></script>
+    <script src = "js/seller.js"></script></script>
+
   <script>
     // Initialize Firebase
     var config = {
@@ -45,82 +52,81 @@
 <body>
 <img src="./images/bg.jpg" id="bgblur" alt="bgImage">
 
-<nav class="navbar fixed-bottom navbar-expand-sm navbar-inverse justify-content-center" id="navbar">
-    <ul class="nav navbar-nav d-flex w-100 justify-content-center" id="menu">
-        <li class="nav-link" id="buy">
-          <a href="Buy.html">BUY</a>
-        </li>
-        <li class="nav-link" id="rsrv">
-            <a href="Reserve.html">RESERVE</a>
-        </li>
-        <li class="nav-link" id="sell">
-          <a href="Sell.html">SELL</a>
-        </li>
-      </ul>
-</nav>
-
   <!-- logo -->
 <div class="container" id="menuContainer">
   <nav class="navbar fixed-top navbar-expand-sm navbar-inverse justify-content-center" id="navbar2">
-    <ul class="nav navbar-nav d-flex mr-auto w-100 justify-content-start" id="logoMenu">
+    <ul class="nav navbar-nav d-flex mr-auto w-10 justify-content-start" id="logoMenu">
       <li class="nav-link" id="logo">
-        <a href="index.html" id="logo2"><img width="75" height="75" src="./images/the final cabbage icon1.png">Home</a>
+        <a href="index.html">Home</a>
       </li>
     </ul>
         <!-- top nav bar -->
-        <!-- firebase count -->
-        <!-- READ -->
-        <script>
-          var output = document.getElementById("spanCount");
-          var dbRef = firebase.database().ref().child("AddedCount");
-          dbRef.on (
-            "value",    //event to read static snapshot of db at initial call, and future chg
-            function(snap){        // event callback receives snapshot
-              output.innerText = snap.val();
-            });
-        </script>
         <!-- WRITE -->
-            <!-- button script -->
-            <script>     
-                function myFunction() { 	
-                    var name = document.getElementById("nextBtn").value;
-                    var dbref = firebase.database().ref("/");
-                    dbref.once("value", function(snap){
-                        var {AddedCount} = snap.val();
-                        var {Count} = snap.val();
-                        Count += AddedCount;
-                        console.log(Count);
-                        dbref.update({
-                        "Count" : Count
-                        });
-                        window.location.href="./index.html";
-                    });
-                } 
-            </script>
+        <script>
+        
+        </script>
+            <ul class="nav navbar-nav d-flex mx-auto w-100 justify-content-center" id="menu">
+              <li class="nav-link" id="buy">
+                <a href="Buy_Search_Page_new.html">BUY</a>
+              </li>
+              <li class="nav-link" id="rsrv">
+                  <a href="Reserve_Search_Page_new.html">RESERVE</a>
+              </li>
+              
+              <li class="nav-link" id="sell">
+                <a href="newFinalSeller.html" style ="background-color: #24562D;color:white">SELL</a>
+              </li>
+            </ul>
         <!-- firebase count end -->
-        <ul class="nav navbar-nav d-flex ml-auto w-100 justify-content-end" id="loginMenu">
+        <ul class="nav navbar-nav d-flex ml-auto w-10 justify-content-end" id="loginMenu">
           <li id="loginButton">
             <a href="login.html">Login</a>
           </li>
         </ul>
-  </nav>      
-</div>
-  
 
+      </nav>
+</div>
 
 <!------------------------------ CONTENT ---------------------------------->
 
   <div id="titleCenter">
     <div id="title">
-        CABBAGE FRIENDS
     </div>
   </div>
-  <div class="col-md-8 col-md-offset-2" id="aboutContent">
+  <div class="col-md-8 col-md-offset-2" id="yello">
+    <div id ="div2">
+    <form id = "input1">
+         <p class = "fontstyle">Farm Name:</p> <input type="text" id ="fname" name="farmname" style ="color : green;" placeholder="farm name" pattern="[A-Za-z0-9]{2,20}" required/>
+    </form>
   </div>
-  <div class="col-md-6 col-md-offset-3" id="title2" style ="font-size: 50pt;
-  font-family: 'Raleway', sans-serif; padding-top: 30px;"> 
-    You Are Now a Cabbage Friend!
+
+  <div id ="div3">
+    <form id = "input2">
+         <p class = "fontstyle">Farm Location: </p> <input type="text" id ="flocation" name="location"  style ="color : green;" size="30" placeholder="address" pattern="[A-Za-z0-9]{8,15}" required/>
+    </form>
   </div>
+
+  <div id ="div3">
+    <form id = "input3">
+         <p class = "fontstyle">Price per KG:</p> <input type="text" id ="fprice" name="Price" style ="color : green;" size="30" placeholder="price" pattern="[0-9]{2,15}" required/>
+    </form>
+  </div>
+
+
+  <div id = "textmid">
+  <img  id = "imggg" alt = "p2" src = "./images/profile.png">
+  <br>
+  <form action="myform.cgi"> <input type="file" name="fileupload" value="fileupload" id ="upfile"> <label for="fileupload" style="font-size : 18px"  size ="20"> Select a file to upload profile photo</label></form>
+  
+
+  </div>
+  <button  onclick= "storeData()"  id ="butto" class ="round" style="font-size : 40px;height:120px;width:200px; border: none;">SUBMIT</button>
+  
+  <div class="col-md-6 col-md-offset-3" id="title2">
+
+</div>
+
+  
 <!-------------------------- end of CONTENT ---------------------------------->    
 
     
@@ -132,7 +138,6 @@
 
 
 	<!-- Bootstrap CDN -->
-	<!--<script src="https://code.jquery.com/jquery-3.3.1.slim.min.js" integrity="sha384-q8i/X+965DzO0rT7abK41JStQIAqVgRVzpbzo5smXKp4YfRvH+8abtTE1Pi6jizo" crossorigin="anonymous"></script>-->
 	<script src="https://cdnjs.cloudflare.com/ajax/libs/popper.js/1.14.7/umd/popper.min.js" integrity="sha384-UO2eT0CpHqdSJQ6hJty5KVphtPhzWj9WO1clHTMGa3JDZwrnQq4sF86dIHNDz0W1" crossorigin="anonymous"></script>
 	<script src="https://stackpath.bootstrapcdn.com/bootstrap/4.3.1/js/bootstrap.min.js" integrity="sha384-JjSmVgyd0p3pXB1rRibZUAYoIIy6OrQ6VrjIEaFf/nJGzIxFDsf4x0xIM+B07jRM" crossorigin="anonymous"></script>
 </body>

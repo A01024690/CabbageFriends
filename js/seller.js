@@ -47,7 +47,7 @@ function storeData(){
 			});
 
 	promise.then(function() {
-			   window.location.href="nowCabbageFriendSeller.html";    
+			   window.location.href="CFforSeller.html";    
 			});	
 	}
 }
